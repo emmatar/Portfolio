@@ -1,0 +1,70 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    height: 50px;
+}
+
+.menu {
+    flex: 1;
+    position: relative;
+    display: inline-block;
+}
+
+.menu-button {
+    padding: 15px;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.menu-content {
+    position: absolute;
+    background-color: gray;
+    min-width: 100px;
+    display: none;
+    box-shadow: 0px 0px 16px 10px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu-content a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 16px 16px;
+}
+
+.menu:hover {background-color: ; color: white;}
+
+.menu:hover .menu-content {display: block;}
+
+.menu-content a:hover {background-color: white; color: gray;}
+
+.title {
+    display: flex;
+    display: inline-block;
+    flex: 2;
+    position: relative;
+}
+
+.title h1 {
+    position: relative;
+    display: flex;
+    padding: 0;
+    margin: 9px;
+    color: blue;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.nav {
+    display: flex;
+    flex: 1;
+    border: 1px solid red;
+}
+
+.nav ul li {
+    display: inline;
+    border: 1px solid purple;
+}
