@@ -12,10 +12,10 @@ header {
 }
 
 .menu-button {
-    padding: 15px;
+    padding: 16px;
     font-size: 15px;
     background-color: white;
-    color: black;
+    color: green;
     border: none;
 }
 
@@ -53,7 +53,7 @@ header {
     display: flex;
     padding: 0;
     margin: 9px;
-    color: blue;
+    color: green;
     justify-content: center;
     align-content: flex-end;
 }
@@ -61,10 +61,16 @@ header {
 .nav {
     display: flex;
     flex: 1;
-    border: 1px solid red;
+    justify-content: flex-end;
 }
 
 .nav ul li {
-    display: inline;
-    border: 1px solid purple;
+    display: inline-block;
+}
+
+.nav_link a {
+    margin: 5px;
+    text-decoration: none;
+    padding: 5px;
+    color: green;
 }
