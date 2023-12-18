@@ -115,7 +115,7 @@ main {
 .section-content {
     flex: 4;
     width: 100%;
-    padding: 5px;
+    padding: 5px 40px;
     margin-left: 1.5em;
 }   
 
@@ -123,6 +123,10 @@ p {
     font-size: 15pt;
 }
 
+img {
+    border: none;
+    border-radius: 1.5em;
+}
 
 #image-1 {
     width: 100%;
@@ -130,17 +134,12 @@ p {
     margin-bottom: .5em;
 }
 
-
-img {
-    border: none;
-    border-radius: 1.5em;
-
-}
-
-
-
 .images {
-    width: 49.8%;
+    width: 49.7%;
     height: 15em;
 }
 
+footer {
+    height: 6rem;
+    background-color: var(--blue);
+}
