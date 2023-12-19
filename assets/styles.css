@@ -48,15 +48,18 @@ header {
 .menu-content {
     display: none;
     position: absolute;
+    top: 5rem;
+    padding: 0;
     background-color: var(--white);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    /* z-index: 1; */
+    list-style: none;
+    z-index: 1;
 }
   
   /* Links inside the dropdown */
 .menu-content a {
-    color: #335D6C;
+    color: #254450;
     padding: 15px 22px;
     text-decoration: none;
     display: block;
@@ -65,8 +68,29 @@ header {
 .menu:hover .menu-content {display: block;}
 /* hovering over each link will slightly highlight background-color */
 .menu-link:hover {background-color: #FFFDF7;}
-/* as background-color lightens font-color changes dark blue to lighter blue*/
+/* as background-color lightens font-color changes dark blue to lighter blue */
 .menu-link:hover a {color: var(--blue);}
+
+@media screen and (min-width: 900px) {
+    .menu-button {
+        display: none;
+    }
+    .menu-content {
+        display: flex;
+        position: relative;
+        background: transparent;
+        margin-left: .5em;
+        top: .5em;
+        border-radius: 50px;
+    }
+    .menu:hover .menu-content {
+        display: flex;
+    }
+    .menu-link:hover {
+        background-color: #FFFDF7;
+        border-radius: 50px;
+    }
+}
 
 .name-container {
     display: flex;
@@ -103,7 +127,7 @@ main {
 .section-title {
     border-right: 2px solid black;
     flex: .65;
-    margin-left: 4rem;
+    margin-left: 5rem;
     padding: 5px 50px 0px 20px;
     font-size: 20pt;
 }
@@ -116,11 +140,26 @@ main {
     flex: 4;
     width: 100%;
     padding: 5px 40px;
-    margin-left: 1.5em;
+    margin-left: 2em;
 }   
 
 p {
     font-size: 15pt;
+}
+
+.row-1 {
+    position: relative;
+}
+
+.horiseon-link {
+    text-decoration: none;
+    position: absolute;
+    font-size: 30pt;
+    margin-left: 10px;
+    color: white;
+}
+.horiseon-link:hover {
+    color: grey;
 }
 
 img {
@@ -134,12 +173,23 @@ img {
     margin-bottom: .5em;
 }
 
+.row-2 {
+    display: flex;
+    justify-content: center;
+}
+
 .images {
-    width: 49.7%;
+    width: 50%;
     height: 15em;
+    padding: 5px;
 }
 
 footer {
     height: 6rem;
     background-color: var(--blue);
 }
+
+/* Need to fix border radius on the lower two work .images */
+/* Put text on image links */
+/* figure out the rest of the guidlines */
+/* !!!!!!!!!!!!!-------READ ME--------!!!!!!!!!!!!!!!!!! */
