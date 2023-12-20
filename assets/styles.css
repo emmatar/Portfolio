@@ -2,6 +2,7 @@
 :root {
     --blue: #36A0A5;
     --white: #FFFBF0;
+    --darkblue: rgb(37, 93, 121);
 }
 
 
@@ -169,7 +170,7 @@ main {
 }   
 
 p {
-    font-size: 15pt;
+    font-size: 16pt;
 }
 
 .row-1 {
@@ -206,6 +207,12 @@ img {
     color: rgb(21, 212, 229);
     font-weight: bold;
 }
+
+@media screen and (min-width: 1200px) {
+    .horiseon-link {
+        font-size: 40pt;
+    }
+}
 @media screen and (max-width: 1200px) {
     .horiseon-link {
         font-size: 40pt;
@@ -213,21 +220,21 @@ img {
     @media screen and (max-width: 1000px) {
         .horiseon-link {
             font-size: 35pt;
-        }
+    }
     @media screen and (max-width: 800px) {
-            .horiseon-link {
-                font-size: 30pt;
-            }
+        .horiseon-link {
+            font-size: 30pt;
         }
+    }
     @media screen and (max-width: 700px) {
-            .horiseon-link {
-                font-size: 20pt;
+        .horiseon-link {
+            font-size: 20pt;
             }
         }
-        @media screen and (max-width: 650px) {
-            .horiseon-link {
-                font-size: 15pt;
-            }
+    @media screen and (max-width: 650px) {
+        .horiseon-link {
+            font-size: 15pt;
+        }
             
         }
     }
@@ -255,6 +262,39 @@ img {
         margin: 10px 0px;
         max-width: 100%;
     }
+}
+
+#link-2 {
+    position: absolute;
+    padding-left: -11rem;
+}
+#link-3 {
+    position: absolute;
+}
+
+.practice {
+    display: flex;
+    width: 100%;
+}
+
+.contact-info {
+    border-bottom: 4px solid var(--darkblue);
+    font-size: 15pt;
+    margin: 0px 10px;
+    text-decoration: none;
+    color: var(--darkblue)
+}
+
+.mail {
+    position: relative;
+}
+
+.mail::before {
+    position: absolute;
+    content: "\2709";
+    font-size: 38pt;
+    bottom: -1.2rem;
+    left: -2.2rem;
 }
 
 footer {
