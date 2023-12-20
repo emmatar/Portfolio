@@ -9,6 +9,12 @@ body {
     padding: 0px;
     margin: 0;
     background-color: var(--white);
+    color: #254450;
+}
+@media screen and (min-width: 550px) {
+    body {
+        width: 100%;
+    }
 }
 
 /* Divided between Nav and Name/profile pic */
@@ -19,6 +25,7 @@ header {
     background-color: var(--blue);
     margin: 0;
 }
+
 /* fixed gab between hovering */
 .menu {
     position: relative;
@@ -79,7 +86,7 @@ header {
         display: flex;
         position: relative;
         background: transparent;
-        margin-left: .5em;
+        margin-left: 1em;
         top: .5em;
         border-radius: 50px;
     }
@@ -109,6 +116,7 @@ header {
     width: 90px;
     height: 90px;
     margin-right: 10px;
+    border: none;
     border-radius: 150px;
 
 }
@@ -121,15 +129,32 @@ main {
 .section {
     margin: 50px 0px;
     display: flex;
-    
 }
 
 .section-title {
     border-right: 2px solid black;
-    flex: .65;
-    margin-left: 5rem;
-    padding: 5px 50px 0px 20px;
+    flex: 1;
+    margin-left: 1rem;
+    padding: 5px 30px 0px 5px;
     font-size: 20pt;
+}
+@media screen and (max-width: 1000px) {
+    .section-title {
+        font-size: 15pt;
+        margin-left: 3rem;
+    }
+    @media screen and (max-width: 750px) {
+        .section-title {
+            font-size: 13pt;
+            margin-left: 2rem;
+        }
+    }
+    @media screen and (max-width: 650px) {
+        .section-title {
+            font-size: 12pt;
+            margin-left: .5rem;
+        }
+    }
 }
 
 .section-title h2 {
@@ -148,40 +173,88 @@ p {
 }
 
 .row-1 {
-    position: relative;
-}
-
-.horiseon-link {
-    text-decoration: none;
-    position: absolute;
-    font-size: 30pt;
-    margin-left: 10px;
-    color: white;
-}
-.horiseon-link:hover {
-    color: grey;
-}
-
-img {
-    border: none;
-    border-radius: 1.5em;
-}
-
-#image-1 {
-    width: 100%;
-    height: 18.75em;
-    margin-bottom: .5em;
-}
-
-.row-2 {
     display: flex;
+    position: relative;
     justify-content: center;
 }
 
+img {
+    border: 4px solid rgb(37, 93, 121);
+    border-radius: 1.3em;
+}
+
+#image-1 { 
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.horiseon-link {
+    position: absolute;
+    width: 4em;
+    top: .1rem;
+    left: -.2rem;
+    border-radius: 1.2rem;
+    background: #e9e5df;
+    border: 4px solid rgb(37, 93, 121);
+    opacity: .9;
+    color: rgb(37, 93, 121);
+    z-index: 3;
+}
+.horiseon-link:hover {
+    background: #fbfaf7;
+    color: rgb(21, 212, 229);
+    font-weight: bold;
+}
+@media screen and (max-width: 1200px) {
+    .horiseon-link {
+        font-size: 40pt;
+    }
+    @media screen and (max-width: 1000px) {
+        .horiseon-link {
+            font-size: 35pt;
+        }
+    @media screen and (max-width: 800px) {
+            .horiseon-link {
+                font-size: 30pt;
+            }
+        }
+    @media screen and (max-width: 700px) {
+            .horiseon-link {
+                font-size: 20pt;
+            }
+        }
+        @media screen and (max-width: 650px) {
+            .horiseon-link {
+                font-size: 15pt;
+            }
+            
+        }
+    }
+}
+
+
+
+.row-2 {
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width: 780px) {
+    .row-2 {
+        display: block;
+    }
+}
+
 .images {
-    width: 50%;
-    height: 15em;
-    padding: 5px;
+    display: inline-block;
+    max-width: 50%;
+    margin: 15px 5px
+}
+@media screen and (max-width: 780px) {
+    .images {
+        margin: 10px 0px;
+        max-width: 100%;
+    }
 }
 
 footer {
