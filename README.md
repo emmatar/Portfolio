@@ -10,7 +10,7 @@ N/A
 
 ## Usage
 
-Exploring through a webpage can be daunting however, luckily, you can use the petite Nav bar (up in the right corner) to zoom through all this glory!!! *ok, calm down now..*....aaaand we're back* Sizing the screen will change the stucture of the nav bar and the images displayed beneath. Click this link to find out: 
+Exploring through a webpage can be daunting however, luckily, you can use the petite Nav bar (up in the right corner) to zoom through all this glory!!! *ok, calm down now..*....aaaand we're back* Sizing the screen will change the stucture of the nav bar and the images displayed beneath. Click this link to find out: https://emmatar.github.io/Portfolio/
 
 ![Screenshot of portfolio page-top](/assets/images/Screenshots/Portfolio-screenshot1.png)
 ![Screenshot of portfolio page-bottom](/assets/images/Screenshots/Portfolio-screenshot2.png)
@@ -31,5 +31,4 @@ Exploring through a webpage can be daunting however, luckily, you can use the pe
 
 
 ## How to Contribute
-
 
