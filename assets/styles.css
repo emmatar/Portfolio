@@ -169,7 +169,7 @@ footer {
 .row-2 {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .section {
@@ -178,7 +178,7 @@ footer {
 }
 
 .section-title {
-    border-right: 2px solid black;
+    border-right: 2px solid var(--darkblue);
     flex: 1;
     margin-left: 1rem;
     padding: 5px 30px 0px 5px;
@@ -198,7 +198,7 @@ footer {
 
 .sub-project {
     position: relative;
-    margin: 10px;
+    margin: 0 7px;
 }
 
 .sub-project img {
@@ -329,7 +329,7 @@ footer {
 @media screen and (max-width: 1600px) {
     #horiseon-link {
         font-size: 50pt;
-        left: -.01em;
+        left: -.05em;
     }
 }
 @media screen and (max-width: 1400px) {
@@ -344,11 +344,17 @@ footer {
         left: -.01em;
     }
 }
+@media screen and (max-width: 800px) {
+    #horiseon-link {
+        left: -.1em;
+        font-size: 20pt;
+    }
+}
 /* ------------------------------------ */
 @media screen and (max-width: 2350px) {
     #horiseon-github {
         font-size: 40pt;
-        right: .01em;
+        right: -.1em;
     }
 }
 @media screen and (max-width: 1600px) {
@@ -366,84 +372,102 @@ footer {
         font-size: 18pt;
     }
 }
-/* ----------------------------------- */
+@media screen and (max-width: 800px) {
+    #horiseon-github {
+        font-size: 14pt;
+        right: -.2em;
+        bottom: 3em;
+    }
+}
 
-@media screen and (min-width: 1200px) {
+/* ------------------------------------- */
+@media screen and (max-width: 2350px) {
     .project-link {
-        font-size: 50pt;
-        top: 2em;
+        font-size: 40pt;
+        left: .01em;
+    }
+}
+@media screen and (max-width: 1600px) {
+    .project-link {
+        font-size: 30pt;
+        left: .01em;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .project-link {
+        font-size: 20pt;
+        left: .01em;
     }
 }
 @media screen and (max-width: 1200px) {
     .project-link {
-        font-size: 35pt;
+        font-size: 18pt;
+        left: .01em;
     }
-    @media screen and (max-width: 1000px) {
-        .project-link {
-            font-size: 30pt;
-    }
-    @media screen and (max-width: 800px) {
-        .project-link {
-            font-size: 25pt;
-        }
-    }
-    @media screen and (max-width: 700px) {
-        .project-link {
-            font-size: 25pt;
-            }
-        }
-    @media screen and (max-width: 650px) {
-        .project-link {
-            font-size: 25pt;
-        }
-            
-        }
+}
+@media screen and (max-width: 800px) {
+    .project-link {
+        font-size: 12pt;
+        left: .01em;
     }
 }
 
-@media screen and (min-width: 1800px) {
+/* -------------------------------------- */
+
+@media screen and (max-width: 2350px) {
     .project-github {
-        position: absolute;
         font-size: 30pt;
-        right: -.2em;
+        right: -.15em;
     }
 }
-@media screen and (max-width: 1790px) {
+@media screen and (max-width: 1600px) {
     .project-github {
-        position: absolute;
         font-size: 25pt;
     }
 }
-    @media screen and (max-width: 1200px) {
-        .project-github {
-            position: absolute;
-            font-size: 20pt;
-        }
-        @media screen and (max-width: 1000px) {
-            .project-github {
-                position: absolute;
-                font-size: 17pt;
-        }
-        @media screen and (max-width: 800px) {
-            .project-github {
-                position: absolute;
-                font-size: 15pt;
-            }
-        }
-        @media screen and (max-width: 700px) {
-            .project-github {
-                position: absolute;
-                font-size: 15pt;
-                }
-            }
-        @media screen and (max-width: 650px) {
-            .project-github {
-                position: absolute;
-                font-size: 15pt;
-                } 
-            }
-        }
+@media screen and (max-width: 1400px) {
+    .project-github {
+        font-size: 20pt;
     }
+}
+@media screen and (max-width: 1200px) {
+    .project-github {
+        font-size: 18pt;
+        bottom: 2em;
+    }
+}
+@media screen and (max-width: 800px) {
+    .project-github {
+        bottom: 1em;
+        right: -.5em;
+        font-size: 12pt;
+    }
+}
+/* ------------------------------------ */
+
+@media screen and (max-width: 1000px) {
+    .row-2 {
+        display: block;
+        justify-content: center;
+    }
+}
+/* ------------------------------------- */
+
+@media screen and (max-width: 950px) {
+    .contact-info  {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .section-title {
+        flex: 1.5
+    }
+}
+
+
+
 
 /* Need to fix border radius on the lower two work .images */
 /* Put text on image links */
