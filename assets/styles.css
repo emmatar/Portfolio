@@ -4,17 +4,13 @@
     --white: #FFFBF0;
     --darkblue: rgb(37, 93, 121);
 }
+/* ----------------------------Main Elements in order of page (top-down)------------------------- */
 header {
     display: flex;
     justify-content: space-between;
     height: 6rem;
     background-color: var(--blue);
     margin: 0;
-}
-
-img {
-    border: 4px solid var(--blue);
-    border-radius: .5em;
 }
 
 body {
@@ -29,6 +25,11 @@ main {
     padding-right: 1em;
 }
 
+img {
+    border: 4px solid var(--blue);
+    border-radius: .5em;
+}
+
 p {
     font-size: 16pt;
 }
@@ -38,11 +39,8 @@ footer {
     background-color: var(--blue);
 }
 
-@media screen and (min-width: 550px) {
-    body {
-        width: 100%;
-    }
-}
+/* ----------------------------Classes------------------------- */
+
 
 .contact {
     display: inline-block;
@@ -81,7 +79,6 @@ footer {
     display: inline-block;
 
 }
-
 
 /* Dropdown Button */
 .menu-button {
@@ -298,6 +295,12 @@ footer {
 
 /* -------------------------MEDIA QUERIES-------------------------- */
 
+@media screen and (min-width: 550px) {
+    body {
+        width: 100%;
+    }
+}
+/* --------------------------------- */
 @media screen and (min-width: 900px) {
     .menu-button {
         display: none;
