@@ -4,7 +4,18 @@
     --white: #FFFBF0;
     --darkblue: rgb(37, 93, 121);
 }
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    background-color: var(--blue);
+    margin: 0;
+}
 
+img {
+    border: 4px solid var(--blue);
+    border-radius: .5em;
+}
 
 body {
     padding: 0px;
@@ -12,19 +23,56 @@ body {
     background-color: var(--white);
     color: #254450;
 }
+
+main {
+    margin-top:4em;
+    padding-right: 1em;
+}
+
+p {
+    font-size: 16pt;
+}
+
+footer {
+    height: 6rem;
+    background-color: var(--blue);
+}
+
 @media screen and (min-width: 550px) {
     body {
         width: 100%;
     }
 }
 
-/* Divided between Nav and Name/profile pic */
-header {
-    display: flex;
-    justify-content: space-between;
-    height: 6rem;
-    background-color: var(--blue);
-    margin: 0;
+.contact {
+    display: inline-block;
+}
+
+.contact-info {
+    font-size: 15pt;
+    margin: 0px 30px;
+    text-decoration: none;
+    color: var(--darkblue);
+}
+
+.github {
+    position: relative;
+}
+
+.linkedin {
+    position: relative;
+}
+
+.mail {
+    position: relative;
+}
+
+.mail::before {
+    position: absolute;
+    content: "\2709";
+    font-size: 45pt;
+    bottom: -.3em;
+    left: -2.5rem; 
 }
 
 /* fixed gab between hovering */
@@ -72,45 +120,10 @@ header {
     text-decoration: none;
     display: block;
 }
-/* hovering over menu allows content to appear */
-.menu:hover .menu-content {display: block;}
-/* hovering over each link will slightly highlight background-color */
-.menu-link:hover {background-color: #FFFDF7;}
-/* as background-color lightens font-color changes dark blue to lighter blue */
-.menu-link:hover a {color: var(--blue);}
-
-@media screen and (min-width: 900px) {
-    .menu-button {
-        display: none;
-    }
-    .menu-content {
-        display: flex;
-        position: relative;
-        background: transparent;
-        margin-left: 1em;
-        top: .5em;
-        border-radius: 50px;
-    }
-    .menu:hover .menu-content {
-        display: flex;
-    }
-    .menu-link:hover {
-        background-color: #FFFDF7;
-        border-radius: 50px;
-    }
-}
 
 .name-container {
     display: flex;
     align-self: center;
-}
-
-#name {
-    color: var(--white);
-    padding-right: 10px;
-    font-size: 40pt;
-    margin: 0px;
-    align-self: flex-end;
 }
 
 .name-container img {
@@ -119,12 +132,44 @@ header {
     margin-right: 10px;
     border: none;
     border-radius: 150px;
-
+}
+.project-link {
+    position: absolute;
+    font-size: 30pt;
+    top: 2em;
+    border-radius: .5rem;
+    background: var(--blue);
+    border: 4px solid var(--blue);
+    opacity: 1;
+    color: var(--white);
+    text-decoration: none;
+    z-index: 3;
 }
 
-main {
-    margin-top:4em;
-    padding-right: 1em;
+.project-github {
+    position: absolute;
+    bottom: 4em;
+    right: -.3em;
+    border-radius: .5rem;
+    font-size: 20pt;
+    background: var(--blue);
+    border: 4px solid var(--blue);
+    opacity: 1;
+    color: var(--white);
+    text-decoration: none;
+    z-index: 3;
+}
+
+.row-1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.row-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .section {
@@ -139,129 +184,91 @@ main {
     padding: 5px 30px 0px 5px;
     font-size: 20pt;
 }
-@media screen and (max-width: 1000px) {
-    .section-title {
-        font-size: 15pt;
-        margin-left: 3rem;
-    }
-    @media screen and (max-width: 750px) {
-        .section-title {
-            font-size: 13pt;
-            margin-left: 2rem;
-        }
-    }
-    @media screen and (max-width: 650px) {
-        .section-title {
-            font-size: 12pt;
-            margin-left: .5rem;
-        }
-    }
-}
 
 .section-title h2 {
     text-align: center;
 }
 
 .section-content {
-    flex: 4;
+    flex: 4.5;
     width: 100%;
     padding: 5px 40px;
     margin-left: 2em;
 }   
 
-p {
-    font-size: 16pt;
-}
-
-.row-1 {
-    display: flex;
+.sub-project {
     position: relative;
-    justify-content: center;
+    margin: 10px;
 }
 
-img {
-    border: 4px solid rgb(37, 93, 121);
-    border-radius: 1.3em;
+.sub-project img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* -------------------------ID's----------------------------  */
+
+#contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#github-logo {
+    position: absolute;
+    border: none;
+    border-radius: 0;
+    width: 1.7em;
+    left: -2em;
+    bottom: -.1em;
+}
+
+#linkedin-logo {
+    position: absolute;
+    border: none;
+    border-radius: 0;
+    width: 1.5em;
+    left: -1.8em;
+    bottom: -.1em;
+}
+
+#horiseon-link {
+    position: absolute;
+    top: 1em;
+    left: -.08em;
+    border-radius: .5rem;
+    font-size: 30pt;
+    background: var(--blue);
+    border: 4px solid var(--blue);
+    opacity: 1;
+    color: var(--white);
+}
+
+#horiseon-github {
+    position: absolute;
+    width: 9em;
+    bottom: 6em;
+    right: -.15em;
+    border-radius: .5rem;
+    font-size: 16pt;
+    background: var(--blue);
+    border: 4px solid var(--blue);
+    opacity: 1;
+    color: var(--white);
+    text-decoration: none;
+    z-index: 3;
+}
+
+#horiseon-link:hover, #horiseon-github:hover {
+    border: 4px solid rgb(47, 203, 220);
+    border-radius: .5rem;
 }
 
 #image-1 { 
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-}
-
-.horiseon-link {
-    position: absolute;
-    width: 4em;
-    top: .1rem;
-    left: -.2rem;
-    border-radius: 1.2rem;
-    background: #e9e5df;
-    border: 4px solid rgb(37, 93, 121);
-    opacity: .9;
-    color: rgb(37, 93, 121);
-    z-index: 3;
-}
-.horiseon-link:hover {
-    background: #fbfaf7;
-    color: rgb(21, 212, 229);
-    font-weight: bold;
-}
-
-@media screen and (min-width: 1200px) {
-    .horiseon-link {
-        font-size: 40pt;
-    }
-}
-@media screen and (max-width: 1200px) {
-    .horiseon-link {
-        font-size: 40pt;
-    }
-    @media screen and (max-width: 1000px) {
-        .horiseon-link {
-            font-size: 35pt;
-    }
-    @media screen and (max-width: 800px) {
-        .horiseon-link {
-            font-size: 30pt;
-        }
-    }
-    @media screen and (max-width: 700px) {
-        .horiseon-link {
-            font-size: 20pt;
-            }
-        }
-    @media screen and (max-width: 650px) {
-        .horiseon-link {
-            font-size: 15pt;
-        }
-            
-        }
-    }
-}
-
-
-
-.row-2 {
-    display: flex;
-    justify-content: space-around;
-}
-@media screen and (max-width: 780px) {
-    .row-2 {
-        display: block;
-    }
-}
-
-.images {
-    display: inline-block;
-    max-width: 50%;
-    margin: 15px 5px
-}
-@media screen and (max-width: 780px) {
-    .images {
-        margin: 10px 0px;
-        max-width: 100%;
-    }
 }
 
 #link-2 {
@@ -272,35 +279,25 @@ img {
     position: absolute;
 }
 
-.practice {
-    display: flex;
-    width: 100%;
+#name {
+    color: var(--white);
+    padding-right: 10px;
+    font-size: 40pt;
+    margin: 0px;
+    align-self: flex-end;
 }
 
-.contact-info {
-    border-bottom: 4px solid var(--darkblue);
-    font-size: 15pt;
-    margin: 0px 10px;
-    text-decoration: none;
-    color: var(--darkblue)
-}
 
-.mail {
-    position: relative;
-}
+/* -------------HOVER--------------------------------- */
 
-.mail::before {
-    position: absolute;
-    content: "\2709";
-    font-size: 38pt;
-    bottom: -1.2rem;
-    left: -2.2rem;
-}
+/* hovering over menu allows content to appear */
+.menu:hover .menu-content {display: block;}
+/* hovering over each link will slightly highlight background-color */
+.menu-link:hover {background-color: #FFFDF7;}
+/* as background-color lightens font-color changes dark blue to lighter blue */
+.menu-link:hover a {color: var(--blue);}
 
-footer {
-    height: 6rem;
-    background-color: var(--blue);
-}
+
 
 /* Need to fix border radius on the lower two work .images */
 /* Put text on image links */
