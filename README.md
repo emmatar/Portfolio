@@ -30,5 +30,3 @@ Exploring through a webpage can be daunting however, luckily, you can use the pe
  N/A
 
 
-## How to Contribute
-
