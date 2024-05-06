@@ -1,5 +1,11 @@
+import Nav from "./pages/Nav.jsx";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <Nav />
+    </>
+  );
 }
 
 export default App;
