@@ -7,7 +7,7 @@ function Footer() {
             m.matar515@gmail.com
           </a>
           <a className="contact-info github" href="https://github.com/emmatar">
-            <img id="github-logo" src="./assets/images/github-mark.png" />
+            <img id="github-logo" src="../../public/github-mark.png" />
             GitHub
           </a>
           <a
@@ -16,7 +16,7 @@ function Footer() {
           >
             <img
               id="linkedin-logo"
-              src="./assets/images/linkedin.svg"
+              src="../../public/linkedin.svg"
               alt="Linkedin logo"
             />
             Linkedin
