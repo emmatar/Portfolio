@@ -35,41 +35,54 @@ p {
 }
 
 footer {
-  height: 6rem;
   background-color: var(--blue);
 }
 
 /* ----------------------------Classes------------------------- */
+.link-row {
+}
 
 .contact {
   display: inline-block;
 }
 
 .contact-info {
+  display: flex;
+  align-items: center;
+  width: max-content;
   font-size: 15pt;
-  margin: 0px 30px;
+  margin: 10px;
   text-decoration: none;
   color: var(--darkblue);
 }
 
-.github {
-  position: relative;
-}
-
-.linkedin {
-  position: relative;
-}
-
-.mail {
-  position: relative;
-}
-
 .mail::before {
-  position: absolute;
+  position: relative;
+  margin-right: 5px;
   content: "\2709";
-  font-size: 45pt;
-  bottom: -0.3em;
-  left: -2.5rem;
+  background-size: 100% 100%;
+  display: inline-block;
+  font-size: 37px;
+}
+
+.github::before {
+  content: "";
+  background-image: url("../../public/github-mark.png");
+  background-size: 100% 100%;
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  margin-right: 5px;
+}
+
+.linkedin::before {
+  content: "";
+  background-image: url("../../public/linkedin.svg");
+  background-size: 100% 100%;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
 }
 
 /* fixed gab between hovering */
@@ -183,13 +196,6 @@ footer {
   text-align: center;
 }
 
-.section-content {
-  flex: 4.5;
-  width: 100%;
-  padding: 5px 40px;
-  margin-left: 2em;
-}
-
 .sub-project {
   position: relative;
   margin: 0 7px;
@@ -201,12 +207,6 @@ footer {
 }
 
 /* -------------------------ID's----------------------------  */
-
-#contact {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
 
 #github-logo {
   position: absolute;
@@ -296,11 +296,11 @@ footer {
 
 /* -------------------------MEDIA QUERIES-------------------------- */
 
-@media screen and (min-width: 550px) {
+/* @media screen and (min-width: 550px) {
   body {
     width: 100%;
   }
-}
+} */
 /* --------------------------------- */
 @media screen and (min-width: 900px) {
   .menu-button {
@@ -323,7 +323,7 @@ footer {
   }
 }
 /* ------------------------------------ */
-@media screen and (max-width: 2350px) {
+/* @media screen and (max-width: 2350px) {
   #horiseon-link {
     font-size: 60pt;
     left: -0.01em;
@@ -352,9 +352,9 @@ footer {
     left: -0.1em;
     font-size: 20pt;
   }
-}
+} */
 /* ------------------------------------ */
-@media screen and (max-width: 2350px) {
+/* @media screen and (max-width: 2350px) {
   #horiseon-github {
     font-size: 40pt;
     right: -0.1em;
@@ -381,10 +381,10 @@ footer {
     right: -0.2em;
     bottom: 3em;
   }
-}
+} */
 
 /* ------------------------------------- */
-@media screen and (max-width: 2350px) {
+/* @media screen and (max-width: 2350px) {
   .project-link {
     font-size: 40pt;
     left: 0.01em;
@@ -413,10 +413,10 @@ footer {
     font-size: 12pt;
     left: 0.01em;
   }
-}
+} */
 
 /* -------------------------------------- */
-
+/* 
 @media screen and (max-width: 2350px) {
   .project-github {
     font-size: 30pt;
@@ -445,18 +445,18 @@ footer {
     right: -0.5em;
     font-size: 12pt;
   }
-}
+} */
 /* ------------------------------------ */
-
+/* 
 @media screen and (max-width: 1000px) {
   .row-2 {
     display: block;
     justify-content: center;
   }
-}
+} */
 /* ------------------------------------- */
 
-@media screen and (max-width: 950px) {
+/* @media screen and (max-width: 950px) {
   .contact-info {
     display: flex;
     justify-content: center;
@@ -467,4 +467,4 @@ footer {
   .section-title {
     flex: 1.5;
   }
-}
+} */
