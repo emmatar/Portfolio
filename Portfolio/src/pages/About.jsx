@@ -7,11 +7,11 @@ function About() {
     <Container lg={12} className="p-2">
       <h1 className="page-title-style">About Me</h1>
       <Col className="page-section-styles">
-        <Row className="mb-4 ">
+        <Row className="mb-4">
           <h3 className="mb-2">Hi, and welcome to my page!</h3>
         </Row>
         <Row className="mx-2">
-          <p>
+          <p className="mb-5">
             As an always learning full-stack web developer, this website will
             change with me as I progress into this exciting development journey.
             I hope that this little piece of the internet will help explain who
