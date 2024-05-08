@@ -34,6 +34,10 @@ p {
   font-size: 16pt;
 }
 
+a {
+  margin: 10px;
+}
+
 footer {
   background-color: var(--blue);
 }
@@ -51,13 +55,11 @@ footer {
   align-items: center;
   width: max-content;
   font-size: 15pt;
-  margin: 10px;
   text-decoration: none;
   color: var(--darkblue);
 }
 
 .mail::before {
-  position: relative;
   margin-right: 5px;
   content: "\2709";
   background-size: 100% 100%;
@@ -85,17 +87,12 @@ footer {
   margin-right: 5px;
 }
 
-/* fixed gab between hovering */
-.menu {
-  position: relative;
-  display: inline-block;
-}
-
 /* Dropdown Button */
 .menu-button {
   height: 2.5rem;
   margin: 28px 20px;
   background-color: var(--blue);
+  border-radius: 10px;
   border-color: var(--white);
 }
 
