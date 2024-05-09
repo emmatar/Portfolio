@@ -15,6 +15,7 @@ function Footer() {
             <a
               className="contact-info github"
               href="https://github.com/emmatar"
+              target="_blank"
             >
             </a>
           </Col>
@@ -22,6 +23,7 @@ function Footer() {
             <a
               className="contact-info linkedin"
               href="https://www.linkedin.com/in/elijah-m-818597b1/"
+              target="_blank"
             >
             </a>
           </Col>
