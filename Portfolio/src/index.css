@@ -28,6 +28,8 @@ img {
   border-radius: 0.5em;
 }
 
+
+
 h2 {
   text-align: center;
 }
@@ -56,9 +58,13 @@ li {
 
 /* ----------------------------Classes------------------------- */
 .page-title-style {
+  display: flex;
   color: var(--blue);
-  font-size: 35pt;
-  margin-left: 0.5em;
+  text-align: center;
+}
+
+.page-title-style h1 {
+  font-size: 40pt;
 }
 
 .page-section-styles {
@@ -116,6 +122,22 @@ li {
   height: 30px;
   width: 30px;
   margin-right: 5px;
+}
+
+.download-logo {
+  position: relative;
+  right: 10px;
+  cursor: pointer;
+  list-style: none;
+  font-size: 40px;
+  color: #0E5259;
+  display: inline-block;
+}
+
+.download-logo:hover {
+  color: #328C83;
+  opacity: 0.5;
+  transition: .5s ease;
 }
 
 .logo {
@@ -181,7 +203,7 @@ li {
   display: inline;
   background-color: var(--white);
   border-radius: 5px;
-  margin: 5px;
+  margin: 2em;
   color: var(--blue);
 }
 

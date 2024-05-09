@@ -1,12 +1,9 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-/*
 import { BsCloudDownload } from "react-icons/bs";
-<a href={myResume} className="download-logo" download>
-  <BsCloudDownload />
-</a> 
-*/
+import myResume from "../lib/assets/Resume.pdf";
+
 import { MdFoundation } from "react-icons/md";
 import { GrTechnology } from "react-icons/gr";
 import { GrDocumentPerformance } from "react-icons/gr";
@@ -14,7 +11,13 @@ import { GrDocumentPerformance } from "react-icons/gr";
 function Resume() {
   return (
     <Container lg={12} className="p-2">
-      <h1 className="page-title-style">Resume</h1>
+      <Row className="page-title-style">
+      <h1>Resume</h1>
+      <a href={myResume} className="download-logo" download>
+        <BsCloudDownload />
+      </a>
+      </Row>
+    <Row>
       <Col className="page-section-styles">
         <Row className="resume-cont">
           <Col className="resume-info">
@@ -80,6 +83,7 @@ function Resume() {
           </Col>
         </Row>
       </Col>
+      </Row>
     </Container>
   );
 }

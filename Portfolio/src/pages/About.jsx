@@ -5,7 +5,9 @@ import Col from "react-bootstrap/Col";
 function About() {
   return (
     <Container lg={12} className="p-2">
-      <h1 className="page-title-style">About Me</h1>
+      <Row className="page-title-style">
+        <h1>About</h1>
+      </Row>
       <Col className="page-section-styles">
         <Row className="mb-4">
           <h3 className="mb-2">Hi, and welcome to my page!</h3>

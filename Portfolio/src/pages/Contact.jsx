@@ -34,12 +34,14 @@ function Contact() {
 
   return (
     <Container lg={12} className="p-2">
-      <h1 className="page-title-style">Contact</h1>
+      <Row className="page-title-style">
+        <h1>Contact</h1>
+      </Row>
       <Col className="page-section-styles">
         <Row className="mx-4">
           <Form onSubmit={handleFormSubmit}>
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label style={{fontSize: "20pt"}}>Name</Form.Label>
+              <Form.Label style={{ fontSize: "20pt" }}>Name</Form.Label>
               <Form.Control
                 value={fullName}
                 name="fullName"
@@ -50,7 +52,9 @@ function Contact() {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label style={{fontSize: "20pt"}}>Email address</Form.Label>
+              <Form.Label style={{ fontSize: "20pt" }}>
+                Email address
+              </Form.Label>
               <Form.Control
                 value={email}
                 name="email"
@@ -64,7 +68,7 @@ function Contact() {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicMessage">
-              <Form.Label style={{fontSize: "20pt"}}>Message</Form.Label>
+              <Form.Label style={{ fontSize: "20pt" }}>Message</Form.Label>
               <Form.Control
                 value={message}
                 name="message"
