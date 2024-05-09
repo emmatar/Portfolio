@@ -5,6 +5,11 @@
   --darkblue: rgb(37, 93, 121);
 }
 /* ----------------------------Main Elements in order of page (top-down)------------------------- */
+
+#root {
+  background-color: var(--white);
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -23,6 +28,10 @@ img {
   border-radius: 0.5em;
 }
 
+h2 {
+  text-align: center;
+}
+
 p {
   font-size: 18pt;
 }
@@ -31,13 +40,19 @@ a {
   margin: 10px;
 }
 
+li {
+  text-align: center;
+  list-style-type: none;
+  line-height: 25pt;
+  font-size: 15pt;
+}
+
 #footer {
   position: absolute;
   bottom: 0;
-  width: 100%; 
-  background-color: var(--blue);        
+  width: 100%;
+  background-color: var(--blue);
 }
-
 
 /* ----------------------------Classes------------------------- */
 .page-title-style {
@@ -103,6 +118,11 @@ a {
   margin-right: 5px;
 }
 
+.logo {
+  font-size: 30pt;
+  margin-bottom: 0.5em;
+}
+
 /* Dropdown Button */
 .menu-button {
   height: 2.5rem;
@@ -154,16 +174,23 @@ a {
   border-radius: 150px;
 }
 
-.row-1 {
-  display: flex;
-  position: relative;
-  justify-content: center;
+.resume-cont {
 }
 
-.row-2 {
-  display: flex;
-  justify-content: center;
-  margin-top: 5px;
+.resume-info {
+  display: inline;
+  background-color: var(--white);
+  border-radius: 5px;
+  margin: 5px;
+  color: var(--blue);
+}
+
+.resume-info-title {
+  padding-top: 2em;
+}
+
+.resume-list-cont {
+  padding: 0;
 }
 
 .section {
