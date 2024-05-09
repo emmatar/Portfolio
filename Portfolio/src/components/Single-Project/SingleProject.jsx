@@ -38,6 +38,7 @@ const SingleProject = () => {
           <Col className="single-proj-img d-flex align-items-center">
             <a href="https://emmatar.github.io/Sweater-Weather/" target="blank">
               <img
+                className="proj-image"
                 src={sweaterWeather}
                 alt="Kansas_City_Weather"
                 style={{ width: "100%" }}
@@ -69,6 +70,7 @@ const SingleProject = () => {
           <Col className="single-proj-img d-flex align-items-center">
             <a href="https://emmatar.github.io/DrumKey/" target="blank">
               <img
+                className="proj-image"
                 src={drumKey}
                 alt="Kansas_City_Weather"
                 style={{ width: "100%" }}
@@ -102,6 +104,7 @@ const SingleProject = () => {
           <Col className="single-proj-img d-flex align-items-center">
             <a href="https://emmatar.github.io/Code-Quiz/" target="blank">
               <img
+                className="proj-image"
                 src={codeQuiz}
                 alt="Kansas_City_Weather"
                 style={{ width: "100%" }}
@@ -141,6 +144,7 @@ const SingleProject = () => {
               target="blank"
             >
               <img
+                className="proj-image"
                 src={patientPortal}
                 alt="Kansas_City_Weather"
                 style={{ width: "100%" }}
@@ -179,6 +183,7 @@ const SingleProject = () => {
           <Col className="single-proj-img d-flex align-items-center">
             <a href="https://emmatar.github.io/Daily-Scheduler/" target="blank">
               <img
+                className="proj-image"
                 src={dailyScheduler}
                 alt="Kansas_City_Weather"
                 style={{ width: "100%" }}
@@ -218,6 +223,7 @@ const SingleProject = () => {
               target="blank"
             >
               <img
+                className="proj-image"
                 src={noteTaker}
                 alt="Kansas_City_Weather"
                 style={{ width: "100%" }}
