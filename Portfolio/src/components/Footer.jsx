@@ -4,8 +4,7 @@ import Col from "react-bootstrap/Col";
 
 function Footer() {
   return (
-    <footer className="fixed-bottom">
-      <Container fluid>
+      <Container fluid id="footer">
         <Row className="d-flex justify-content-center flex-wrap">
           <Col md={2} className="d-flex justify-content-center align-items-center p-0">
             <a className="contact-info mail" href="mailto:m.matar515@gmail.com">
@@ -29,7 +28,6 @@ function Footer() {
           </Col>
         </Row>
       </Container>
-    </footer>
   );
 }
 
