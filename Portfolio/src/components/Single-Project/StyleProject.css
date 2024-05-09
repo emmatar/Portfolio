@@ -7,9 +7,17 @@
 /* Element Tags */
 img {
   border-radius: 15px;
+  transition: transform 0.1s;
+}
+a img:hover {
+  transform: scale(1.1);
 }
 
 /* Classes */
+.github-icon {
+  min-width: 50px;
+  min-height: 50px;
+}
 
 .single-proj-cont {
   margin-top: 2em;
@@ -23,6 +31,18 @@ img {
   line-height: 1.5;
   color: var(--white);
 }
+
+.github-icon {
+  position: relative;
+  content: "";
+  background-image: url("../../lib/images/github-mark.png");
+  background-size: 100% 100%;
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  bottom: 5px;
+}
+
 .single-proj-text p {
   margin-top: 1em;
   font-size: 23px;
