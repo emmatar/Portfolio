@@ -6,9 +6,7 @@
 }
 /* ----------------------------Main Elements in order of page (top-down)------------------------- */
 
-#root {
-  background-color: var(--white);
-}
+
 
 header {
   display: flex;
@@ -50,10 +48,7 @@ li {
 }
 
 #footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: var(--blue);
+  background-color: var(--blue); 
 }
 
 /* ----------------------------Classes------------------------- */
@@ -264,7 +259,11 @@ li {
 }
 
 /* -------------------------MEDIA QUERIES-------------------------- */
-
+@media screen and (min-width: 550px) {
+  body {
+      width: 100%;
+  }
+}
 /* --------------------------------- */
 @media screen and (min-width: 900px) {
   .menu-button {
