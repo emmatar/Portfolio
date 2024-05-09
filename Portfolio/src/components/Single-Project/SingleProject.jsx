@@ -1,5 +1,6 @@
 import "./StyleProject.css";
 
+// eslint-disable-next-line react/prop-types
 const SingleProject = ({ title, picture, github, deploy }) => {
   return (
     <div className="single-project">
