@@ -4,10 +4,9 @@ import Col from "react-bootstrap/Col";
 import SingleProject from '../components/Single-Project/SingleProject'
 
 function Projects() {
-
   const test = [{
     title: 'Project',
-    picture: '../../public/sweater-weather.png',
+    picture: '../lib/images/github-mark.png',
     github: 'https://github.com/emmatar',
     deploy: 'https://emmatar.github.io/Sweater-Weather/'
   }]
