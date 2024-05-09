@@ -6,8 +6,10 @@
 
 /* Element Tags */
 img {
+  border: none;
   border-radius: 15px;
   transition: transform 0.1s;
+
 }
 a img:hover {
   transform: scale(1.1);
@@ -30,6 +32,10 @@ a img:hover {
   font-size: 33px;
   line-height: 1.5;
   color: var(--white);
+}
+.proj-image {
+  box-shadow: 10px 10px 30px -7px rgba(0, 0, 0, 0.5);
+
 }
 
 .github-icon {
