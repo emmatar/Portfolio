@@ -13,16 +13,9 @@ header {
   margin: 0;
 }
 
-body {
-  padding: 0px;
-  margin: 0;
-  background-color: var(--white);
-  color: #254450;
-}
-
 main {
   margin-top: 4em;
-  padding-right: 1em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -31,19 +24,42 @@ img {
 }
 
 p {
-  font-size: 16pt;
+  font-size: 18pt;
 }
 
 a {
   margin: 10px;
 }
 
-footer {
-  background-color: var(--blue);
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; 
+  background-color: var(--blue);        
 }
 
+
 /* ----------------------------Classes------------------------- */
-.link-row {
+.page-title-style {
+  color: var(--blue);
+  font-size: 35pt;
+  margin-left: 0.5em;
+}
+
+.page-section-styles {
+  position: relative;
+  border-radius: 10px;
+  width: 90%;
+  height: auto;
+  padding: 3em;
+  margin: 3em;
+  background-color: var(--blue);
+  color: white;
+}
+
+.about-me-underline {
+  text-decoration: underline;
+  text-decoration-color: var(--white);
 }
 
 .contact {
@@ -69,7 +85,7 @@ footer {
 
 .github::before {
   content: "";
-  background-image: url("../../public/github-mark.png");
+  background-image: url("./lib/images/github-mark.png");
   background-size: 100% 100%;
   display: inline-block;
   height: 35px;
@@ -79,7 +95,7 @@ footer {
 
 .linkedin::before {
   content: "";
-  background-image: url("../../public/linkedin.svg");
+  background-image: url("./lib/images/linkedin.svg");
   background-size: 100% 100%;
   display: inline-block;
   height: 30px;
@@ -137,32 +153,6 @@ footer {
   border: none;
   border-radius: 150px;
 }
-.project-link {
-  position: absolute;
-  font-size: 30pt;
-  top: 1em;
-  border-radius: 0.5rem;
-  background: var(--blue);
-  border: 4px solid var(--blue);
-  opacity: 1;
-  color: var(--white);
-  text-decoration: none;
-  z-index: 3;
-}
-
-.project-github {
-  position: absolute;
-  bottom: 4em;
-  right: -0.3em;
-  border-radius: 0.5rem;
-  font-size: 20pt;
-  background: var(--blue);
-  border: 4px solid var(--blue);
-  opacity: 1;
-  color: var(--white);
-  text-decoration: none;
-  z-index: 3;
-}
 
 .row-1 {
   display: flex;
@@ -179,28 +169,6 @@ footer {
 .section {
   margin: 50px 0px;
   display: flex;
-}
-
-.section-title {
-  border-right: 2px solid var(--darkblue);
-  flex: 1;
-  margin-left: 1rem;
-  padding: 5px 30px 0px 5px;
-  font-size: 20pt;
-}
-
-.section-title h2 {
-  text-align: center;
-}
-
-.sub-project {
-  position: relative;
-  margin: 0 7px;
-}
-
-.sub-project img {
-  width: 100%;
-  height: 100%;
 }
 
 /* -------------------------ID's----------------------------  */
@@ -221,51 +189,6 @@ footer {
   width: 1.5em;
   left: -1.8em;
   bottom: -0.1em;
-}
-
-#horiseon-link {
-  position: absolute;
-  top: 1em;
-  left: -0.08em;
-  border-radius: 0.5rem;
-  font-size: 30pt;
-  background: var(--blue);
-  border: 4px solid var(--blue);
-  opacity: 1;
-  color: var(--white);
-}
-
-#horiseon-github {
-  position: absolute;
-  bottom: 6em;
-  right: -0.15em;
-  border-radius: 0.5rem;
-  font-size: 16pt;
-  background: var(--blue);
-  border: 4px solid var(--blue);
-  opacity: 1;
-  color: var(--white);
-  text-decoration: none;
-  z-index: 3;
-}
-
-#horiseon-link:hover,
-#horiseon-github:hover {
-  border: 4px solid rgb(47, 203, 220);
-  border-radius: 0.5rem;
-}
-
-#image-1 {
-  width: 100%;
-  height: 100%;
-}
-
-#link-2 {
-  position: absolute;
-  padding-left: -11rem;
-}
-#link-3 {
-  position: absolute;
 }
 
 #name {
@@ -293,11 +216,6 @@ footer {
 
 /* -------------------------MEDIA QUERIES-------------------------- */
 
-/* @media screen and (min-width: 550px) {
-  body {
-    width: 100%;
-  }
-} */
 /* --------------------------------- */
 @media screen and (min-width: 900px) {
   .menu-button {
@@ -319,149 +237,3 @@ footer {
     border-radius: 50px;
   }
 }
-/* ------------------------------------ */
-/* @media screen and (max-width: 2350px) {
-  #horiseon-link {
-    font-size: 60pt;
-    left: -0.01em;
-  }
-}
-@media screen and (max-width: 1600px) {
-  #horiseon-link {
-    font-size: 50pt;
-    left: -0.05em;
-  }
-}
-@media screen and (max-width: 1400px) {
-  #horiseon-link {
-    font-size: 40pt;
-    left: -0.01em;
-  }
-}
-@media screen and (max-width: 1200px) {
-  #horiseon-link {
-    font-size: 30pt;
-    left: -0.01em;
-  }
-}
-@media screen and (max-width: 800px) {
-  #horiseon-link {
-    left: -0.1em;
-    font-size: 20pt;
-  }
-} */
-/* ------------------------------------ */
-/* @media screen and (max-width: 2350px) {
-  #horiseon-github {
-    font-size: 40pt;
-    right: -0.1em;
-  }
-}
-@media screen and (max-width: 1600px) {
-  #horiseon-github {
-    font-size: 30pt;
-  }
-}
-@media screen and (max-width: 1400px) {
-  #horiseon-github {
-    font-size: 20pt;
-  }
-}
-@media screen and (max-width: 1200px) {
-  #horiseon-github {
-    font-size: 18pt;
-  }
-}
-@media screen and (max-width: 800px) {
-  #horiseon-github {
-    font-size: 14pt;
-    right: -0.2em;
-    bottom: 3em;
-  }
-} */
-
-/* ------------------------------------- */
-/* @media screen and (max-width: 2350px) {
-  .project-link {
-    font-size: 40pt;
-    left: 0.01em;
-  }
-}
-@media screen and (max-width: 1600px) {
-  .project-link {
-    font-size: 30pt;
-    left: 0.01em;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .project-link {
-    font-size: 20pt;
-    left: 0.01em;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .project-link {
-    font-size: 18pt;
-    left: 0.01em;
-  }
-}
-@media screen and (max-width: 800px) {
-  .project-link {
-    font-size: 12pt;
-    left: 0.01em;
-  }
-} */
-
-/* -------------------------------------- */
-/* 
-@media screen and (max-width: 2350px) {
-  .project-github {
-    font-size: 30pt;
-    right: -0.15em;
-  }
-}
-@media screen and (max-width: 1600px) {
-  .project-github {
-    font-size: 25pt;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .project-github {
-    font-size: 20pt;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .project-github {
-    font-size: 18pt;
-    bottom: 2em;
-  }
-}
-@media screen and (max-width: 800px) {
-  .project-github {
-    bottom: 1em;
-    right: -0.5em;
-    font-size: 12pt;
-  }
-} */
-/* ------------------------------------ */
-/* 
-@media screen and (max-width: 1000px) {
-  .row-2 {
-    display: block;
-    justify-content: center;
-  }
-} */
-/* ------------------------------------- */
-
-/* @media screen and (max-width: 950px) {
-  .contact-info {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 25px;
-  }
-}
-@media screen and (max-width: 950px) {
-  .section-title {
-    flex: 1.5;
-  }
-} */
