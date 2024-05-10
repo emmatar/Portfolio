@@ -4,37 +4,21 @@
 
   ## Description
 
-  A portfolio created with React.Js
+  A webpage to display developing projects and completed work in order to showcase my capabilities to interested parties.
+
+  The mission behind this application was to create an application that would implement React.Js for a better, more efficient developed website. What better to showcase design abilities with React than to do it on my own Portfolio! Cheers!
+
+  
 
   ## Table of Contents
   - [Description](#description)
   - [License](#license)
-  - [Installation](#installation)
-  - [Tests](#tests)
-  - [Usage](#usage)
-  - [Contributing](#contributing)
   - [Questions](#questions)
 
   ## License 
 
   This application is under MIT Licensing.<br />
   Click the license badge above for more information regarding this license.
-
-  ## Installation
-
-    npm i
-
-  ## Tests 
-
-     
-
-  ## Usage
-
-  
-
-  ## Contributing 
-
-  
 
   ## Questions
   Application questions? 
