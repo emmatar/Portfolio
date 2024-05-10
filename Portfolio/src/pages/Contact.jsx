@@ -27,6 +27,7 @@ function Contact() {
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
+
     setFullName("");
     setEmail("");
     setMessage("");
@@ -77,9 +78,13 @@ function Contact() {
                 onChange={handleInputChange}
               />
             </Form.Group>
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
+            {fullName && email && message ? (
+              <Button variant="primary" type="submit">
+                Submit
+              </Button>
+            ) : (
+              <p>**Answer all fields please**</p>
+            )}
           </Form>
         </Row>
       </Col>
