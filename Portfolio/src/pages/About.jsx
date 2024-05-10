@@ -10,7 +10,7 @@ function About() {
       </Row>
       <Col className="page-section-styles">
         <Row className="mb-4">
-          <h3 className="mb-2">Hi, and welcome to my page!</h3>
+          <h3 className="mb-2">Hello, and welcome to my page!</h3>
         </Row>
         <Row className="mx-2">
           <p className="mb-5">
@@ -18,8 +18,11 @@ function About() {
             change with me as I progress into this exciting development journey.
             I hope that this little piece of the internet will help explain who
             I am as a developer, and to showcase my interests through my work.
+            <br />
+            <br />
+            <br />
           </p>
-          <p className="pt-5">*Due to short timing: Updates coming soon!*</p>
+          <p className="pt-5">*Due to short timing: UI updates coming soon!*</p>
         </Row>
       </Col>
     </Container>
