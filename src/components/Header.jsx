@@ -6,7 +6,7 @@ function Header() {
       <NavTabs />
       <div className="name-container">
         <h1 id="name">Elijah Matar</h1>
-        <img src="../../public/Profile_pic.jpeg" alt="Profile picture" />
+        <img src="../lib/images/Profile_pic.jpeg" alt="Profile picture" />
       </div>
     </header>
   );
