@@ -1,4 +1,5 @@
 import NavTabs from "./NavTabs";
+import image from "../lib/images/Profile_pic.jpeg";
 
 function Header() {
   return (
@@ -6,7 +7,7 @@ function Header() {
       <NavTabs />
       <div className="name-container">
         <h1 id="name">Elijah Matar</h1>
-        <img src="../lib/images/Profile_pic.jpeg" alt="Profile picture" />
+        <img src={image} alt="Profile picture" />
       </div>
     </header>
   );
