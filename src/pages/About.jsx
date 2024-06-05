@@ -22,7 +22,7 @@ function About() {
             <br />
             <br />
           </p>
-          <p className="pt-5">*Due to short timing: UI updates coming soon!*</p>
+          {/* <p className="pt-5">*Due to short timing: UI updates coming soon!*</p> */}
         </Row>
       </Col>
     </Container>

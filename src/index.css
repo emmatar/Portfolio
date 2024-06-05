@@ -49,9 +49,19 @@ li {
 
 #footer {
   background-color: var(--blue); 
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-top: 5em;
+  width: 100%;
 }
 
 /* ----------------------------Classes------------------------- */
+
+.page-height {
+  height: 100vh;
+}
+
 .page-title-style {
   display: flex;
   color: var(--blue);

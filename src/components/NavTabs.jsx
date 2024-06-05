@@ -40,7 +40,7 @@ function NavTabs() {
               Resume
             </Link>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link
               to="/Contact"
               className={
@@ -49,7 +49,7 @@ function NavTabs() {
             >
               Contact
             </Link>
-          </li>
+          </li> */}
         </ul>
       </section>
     </>
