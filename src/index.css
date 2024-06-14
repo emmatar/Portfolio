@@ -85,6 +85,15 @@ li {
   text-decoration-color: var(--white);
 }
 
+/* img {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.1s;
+}
+a img:hover {
+  transform: scale(1.1);
+} */
+
 .contact {
   display: inline-block;
 }
@@ -152,7 +161,7 @@ li {
   height: 2.5rem;
   margin: 28px 20px;
   background-color: var(--blue);
-  border-radius: 10px;
+  border-radius: 15px;
   border-color: var(--white);
 }
 
@@ -170,18 +179,17 @@ li {
   position: absolute;
   top: 5rem;
   padding: 0;
-  color: var(--white);
+  color: var(--blue);
   background-color: var(--white);
   border-radius: 0px 40px;
   min-width: 160px;
-  box-shadow: 15px 0px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 0px 15px 0px rgba(0, 0, 0, 0.2);
   list-style: none;
   z-index: 1;
 }
 
 /* Links inside the dropdown */
 .menu-content a {
-  color: var(--blue);
   padding: 15px 22px;
   text-decoration: none;
   display: block;
@@ -258,6 +266,9 @@ li {
 /* hovering over each link will slightly highlight background-color */
 .menu-content a:hover {
   color: var(--darkblue);
+}
+.contact-info:hover {
+  transform: scale(1.1);
 }
 
 /* -------------------------MEDIA QUERIES-------------------------- */
