@@ -179,7 +179,7 @@ a img:hover {
   position: absolute;
   top: 5rem;
   padding: 0;
-  color: var(--blue);
+  color: var(--darkblue);
   background-color: var(--white);
   border-radius: 0px 40px;
   min-width: 160px;
@@ -265,7 +265,7 @@ a img:hover {
 }
 /* hovering over each link will slightly highlight background-color */
 .menu-content a:hover {
-  color: var(--darkblue);
+  color: var(--blue);
 }
 .contact-info:hover {
   transform: scale(1.1);
