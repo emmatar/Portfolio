@@ -5,9 +5,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div className="page-height">
+    <div>
       <Header />
-      <main>
+      <main className="mb-2">
         <Outlet />
       </main>
       <Footer />
