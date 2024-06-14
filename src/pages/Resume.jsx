@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { BsCloudDownload } from "react-icons/bs";
-import myResume from "../lib/assets/Resume.pdf";
+import myResume from "../lib/assets/Elijah_Matar_Resume.pdf";
 
 import { MdFoundation } from "react-icons/md";
 import { GrTechnology } from "react-icons/gr";
