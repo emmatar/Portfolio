@@ -1,10 +1,8 @@
 import NavTabs from "./NavTabs";
 import image from "../lib/images/Profile_pic.jpeg";
-import { Container } from "react-bootstrap";
 
 function Header() {
   return (
-
     <header>
       <NavTabs />
       <div className="name-container">

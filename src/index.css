@@ -157,7 +157,7 @@ li {
 }
 
 /* color/dimensions for logo lines */
-.menu-botton-logo {
+.menu-button-logo {
   background-color: var(--white);
   margin: 5px 5px;
   width: 1.5rem;
@@ -170,6 +170,7 @@ li {
   position: absolute;
   top: 5rem;
   padding: 0;
+  color: var(--white);
   background-color: var(--white);
   border-radius: 0px 40px;
   min-width: 160px;
@@ -255,12 +256,8 @@ li {
   display: block;
 }
 /* hovering over each link will slightly highlight background-color */
-.menu-link:hover {
-  background-color: #fffdf7;
-}
-/* as background-color lightens font-color changes dark blue to lighter blue */
-.menu-link:hover a {
-  color: var(--blue);
+.menu-content a:hover {
+  color: var(--darkblue);
 }
 
 /* -------------------------MEDIA QUERIES-------------------------- */
@@ -285,9 +282,5 @@ li {
   }
   .menu:hover .menu-content {
     display: flex;
-  }
-  .menu-link:hover {
-    background-color: #fffdf7;
-    border-radius: 50px;
   }
 }

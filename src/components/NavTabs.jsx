@@ -7,9 +7,9 @@ function NavTabs() {
     <>
       <section className="menu">
         <button className="menu-button">
-          <div className="menu-botton-logo"></div>
-          <div className="menu-botton-logo"></div>
-          <div className="menu-botton-logo"></div>
+          <div className="menu-button-logo"></div>
+          <div className="menu-button-logo"></div>
+          <div className="menu-button-logo"></div>
         </button>
         <ul className="menu-content">
           <li className="nav-item">
