@@ -14,7 +14,7 @@ function Projects() {
   ];
 
   return (
-    <Container lg={12} className="p-2">
+    <Container lg={12} className="p-2 page-cont">
       <Row className="page-title-style">
         <h1>Projects</h1>
       </Row>

@@ -10,7 +10,7 @@ import { GrDocumentPerformance } from "react-icons/gr";
 
 function Resume() {
   return (
-    <Container lg={12} className="p-2">
+    <Container lg={12} className="p-2 page-cont">
       <Row className="page-title-style">
         <h1>Resume</h1>
         <a href={myResume} className="download-logo" download>
@@ -20,15 +20,15 @@ function Resume() {
       <Row>
         <Col className="page-section-styles">
           <Row className="resume-cont">
-            <Col className="resume-info">
+            <Col className="resume-info my-2">
               <Row className="resume-info-title">
                 <h2>Front-End</h2>
+                <span className="logo">
+                  <MdFoundation />
+                </span>
               </Row>
               <Row>
                 <ul className="resume-list-cont">
-                  <li className="logo">
-                    <MdFoundation />
-                  </li>
                   <li className="resume-list-item">HTML 5</li>
                   <li className="resume-list-item">CSS</li>
                   <li className="resume-list-item">JavaScript</li>
@@ -39,15 +39,15 @@ function Resume() {
                 </ul>
               </Row>
             </Col>
-            <Col className="resume-info">
+            <Col className="resume-info my-2">
               <Row className="resume-info-title">
                 <h2>Back-End</h2>
+                <span className="logo">
+                  <GrTechnology />
+                </span>
               </Row>
               <Row>
                 <ul className="resume-list-cont">
-                  <li className="logo">
-                    <GrTechnology />
-                  </li>
                   <li className="resume-list-item">Node.Js</li>
                   <li className="resume-list-item">Jest</li>
                   <li className="resume-list-item">Express.js</li>
@@ -62,15 +62,15 @@ function Resume() {
                 </ul>
               </Row>
             </Col>
-            <Col className="resume-info">
+            <Col className="resume-info my-2">
               <Row className="resume-info-title">
                 <h2>Performance</h2>
+                <span className="logo">
+                  <GrDocumentPerformance />
+                </span>
               </Row>
               <Row>
                 <ul className="resume-list-cont">
-                  <li className="logo">
-                    <GrDocumentPerformance />
-                  </li>
                   <li className="resume-list-item">NoSQL</li>
                   <li className="resume-list-item">
                     Progressive Web Applications (PWA)

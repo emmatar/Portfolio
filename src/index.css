@@ -54,52 +54,25 @@ li {
 
 /* ----------------------------Classes------------------------- */
 
-.proj-cont {
-  padding: 0;
-}
-
-.page-title-style {
-  display: flex;
-  color: var(--blue);
-  text-align: center;
-}
-
-.page-title-style h1 {
-  font-size: 40pt;
-}
-
-.page-section-styles {
-  position: relative;
-  border-radius: 10px;
-  width: 90%;
-  height: auto;
-  padding: 3em;
-  margin-left: 3em;
-  margin-right: 3em;
-  background-color: var(--blue);
-  color: white;
-}
-
 .about-me-underline {
   text-decoration: underline;
   text-decoration-color: var(--white);
 }
 
-/* img {
+img {
   border: none;
   border-radius: 15px;
   transition: transform 0.1s;
 }
 a img:hover {
   transform: scale(1.1);
-} */
+}
 
 .contact {
   display: inline-block;
 }
 
 .contact-info {
-  display: flex;
   align-items: center;
   width: max-content;
   font-size: 15pt;
@@ -136,6 +109,7 @@ a img:hover {
 }
 
 .download-logo {
+  width: 10px;
   position: relative;
   right: 10px;
   cursor: pointer;
@@ -152,8 +126,11 @@ a img:hover {
 }
 
 .logo {
-  font-size: 30pt;
-  margin-bottom: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 35pt;
+  margin-bottom: 0.6em;
 }
 
 /* Dropdown Button */
@@ -177,20 +154,21 @@ a img:hover {
 .menu-content {
   display: none;
   position: absolute;
-  top: 5rem;
+  top: 6rem;
   padding: 0;
-  color: var(--darkblue);
+  color: var(--blue);
   background-color: var(--white);
-  border-radius: 0px 40px;
-  min-width: 160px;
-  box-shadow: 10px 0px 15px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 30px;
+  width: fit-content;
+  box-shadow: 20px 10px 20px -10px rgba(0, 0, 0, 0.2);
   list-style: none;
   z-index: 1;
 }
 
 /* Links inside the dropdown */
 .menu-content a {
-  padding: 15px 22px;
+  font-size: 17pt;
+  padding: 12px 0px 12px 0px;
   text-decoration: none;
   display: block;
 }
@@ -208,11 +186,50 @@ a img:hover {
   border-radius: 150px;
 }
 
+.nav-item {
+  margin-right: 10px;
+}
+
+.page-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-title-style {
+  width: fit-content;
+  display: flex;
+  color: var(--blue);
+  text-align: center;
+}
+
+.page-title-style h1 {
+  font-size: 40pt;
+}
+
+.page-section-styles {
+  padding: 1em;
+  margin: 1.5em;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  background-color: var(--blue);
+  color: white;
+}
+
+.proj-cont {
+  padding: 0;
+}
+
+.resume-cont {
+  justify-content: center;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
 .resume-info {
-  display: inline;
   background-color: var(--white);
-  border-radius: 5px;
-  margin: 2em;
+  border-radius: 10px;
   color: var(--blue);
 }
 
@@ -265,20 +282,15 @@ a img:hover {
 }
 /* hovering over each link will slightly highlight background-color */
 .menu-content a:hover {
-  color: var(--blue);
+  color: var(--darkblue);
 }
 .contact-info:hover {
   transform: scale(1.1);
 }
 
 /* -------------------------MEDIA QUERIES-------------------------- */
-@media screen and (min-width: 550px) {
-  body {
-    width: 100%;
-  }
-}
-/* --------------------------------- */
-@media screen and (min-width: 900px) {
+
+@media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
@@ -293,5 +305,73 @@ a img:hover {
   }
   .menu:hover .menu-content {
     display: flex;
+  }
+  .page-section-styles {
+    margin-top: 5em;
+  }
+}
+
+@media screen and (max-width: 729px) {
+  #name {
+    font-size: 40pt;
+    margin-right: 5px;
+  }
+
+  .page-section-styles {
+    margin: 1em;
+  }
+
+  .nav-item {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-content {
+    width: 140px;
+  }
+
+  .menu-content a {
+    font-size: 18pt;
+    padding: 0px 0px 0px 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #name {
+    font-size: 35pt;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .page-section-styles {
+    padding: 1em;
+    margin: 1.5em;
+  }
+  .resume-info {
+    background-color: var(--white);
+    border-radius: 10px;
+    color: var(--blue);
+    margin: 5px;
+  }
+
+  #name {
+    font-size: 28pt;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .page-section-styles {
+    padding: 1em;
+    margin: 1.5em;
+  }
+
+
+  #name {
+    margin-left: 2px;
+    font-size: 16pt;
+    margin-right: 5px;
   }
 }

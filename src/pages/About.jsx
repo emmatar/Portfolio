@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 
 function About() {
   return (
-    <Container lg={12} className="p-2">
+    <Container lg={12} className="p-2 page-cont">
       <Row className="page-title-style">
         <h1>About</h1>
       </Row>
