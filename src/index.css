@@ -290,7 +290,20 @@ a img:hover {
 
 /* -------------------------MEDIA QUERIES-------------------------- */
 
+/* @media screen and (min-width: 992px) {
+  .page-section-styles {
+    display: flex;
+  }
+  .resume-cont {
+    justify-content: space-around;
+  }
+} */
+
 @media screen and (min-width: 768px) {
+  #name {
+    font-size: 40pt;
+    margin-right: 5px;
+  }
   .menu-button {
     display: none;
   }
@@ -307,71 +320,90 @@ a img:hover {
     display: flex;
   }
   .page-section-styles {
-    margin-top: 5em;
+    width: 700px;
+    padding: 1.7em;
+    margin: 2.5em;
   }
-}
-
-@media screen and (max-width: 729px) {
-  #name {
-    font-size: 40pt;
-    margin-right: 5px;
-  }
-
-  .page-section-styles {
-    margin: 1em;
-  }
-
-  .nav-item {
-    width: 100px;
+  .resume-cont {
     display: flex;
-    justify-content: center;
-  }
-
-  .menu-content {
-    width: 140px;
-  }
-
-  .menu-content a {
-    font-size: 18pt;
-    padding: 0px 0px 0px 40px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  #name {
-    font-size: 35pt;
-    margin-right: 5px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .page-section-styles {
-    padding: 1em;
-    margin: 1.5em;
+    padding: 0px;
   }
   .resume-info {
     background-color: var(--white);
     border-radius: 10px;
     color: var(--blue);
-    margin: 5px;
+    margin: 15px;
+    padding: 0px;
   }
+}
 
+@media screen and (max-width: 767px) {
+  .menu-content {
+    width: 140px;
+  }
+  .menu-content a {
+    font-size: 18pt;
+    padding: 0px 0px 0px 40px;
+  }
+  .nav-item {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  /* .page-section-styles {
+    padding: 1.7em;
+  } */
+  .resume-cont {
+    display: inline-block
+  }
+  .resume-info {
+    background-color: var(--white);
+    border-radius: 10px;
+    color: var(--blue);
+    margin: 15px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #name {
+    font-size: 35pt;
+    margin-right: 5px;
+  }
+  /* .page-section-styles {
+    padding: 1.7em;
+    margin: 3em;
+  } */
+  .resume-info {
+    background-color: var(--white);
+    border-radius: 10px;
+    color: var(--blue);
+    margin: 15px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
   #name {
     font-size: 28pt;
     margin-right: 5px;
   }
+  /* .page-section-styles {
+    padding: 1.5em;
+    margin: 3em;
+  } */
+  /* .resume-info {
+    background-color: var(--white);
+    border-radius: 10px;
+    color: var(--blue);
+    margin: 15px;
+  } */
 }
 
 @media screen and (max-width: 400px) {
-  .page-section-styles {
-    padding: 1em;
-    margin: 1.5em;
-  }
-
-
   #name {
     margin-left: 2px;
-    font-size: 16pt;
+    font-size: 21pt;
     margin-right: 5px;
   }
 }

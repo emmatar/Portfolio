@@ -14,10 +14,13 @@ function About() {
         </Row>
         <Row className="mx-2">
           <p className="mb-5">
-            As an always learning full-stack web developer, this website will
-            change with me as I progress into this exciting development journey.
-            I hope that this little piece of the internet will help explain who
-            I am as a developer, and to showcase my interests through my work.
+            Full Stack Web Developer, blending front-end and back-end knowledge
+            with a strong background in data-driven decision-making. Proficient
+            in HTML5, CSS3, JavaScript ES6+, React, Express.js, and SQL,
+            focusing on optimizing user interaction and operational efficiency.
+            Committed to leveraging analytical skills and a detail-oriented
+            approach to develop innovative applications that enhance user
+            experience.
             <br />
             <br />
             <br />

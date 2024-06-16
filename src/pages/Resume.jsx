@@ -20,7 +20,7 @@ function Resume() {
       <Row>
         <Col className="page-section-styles">
           <Row className="resume-cont">
-            <Col className="resume-info my-2">
+            <Col xs={12} sm={5} md={5} lg={3} className="resume-info">
               <Row className="resume-info-title">
                 <h2>Front-End</h2>
                 <span className="logo">
@@ -39,7 +39,7 @@ function Resume() {
                 </ul>
               </Row>
             </Col>
-            <Col className="resume-info my-2">
+            <Col xs={12} sm={5} md={5} lg={3} className="resume-info">
               <Row className="resume-info-title">
                 <h2>Back-End</h2>
                 <span className="logo">
@@ -62,7 +62,7 @@ function Resume() {
                 </ul>
               </Row>
             </Col>
-            <Col className="resume-info my-2">
+            <Col xs={12} sm={11} md={11} lg={3} className="resume-info">
               <Row className="resume-info-title">
                 <h2>Performance</h2>
                 <span className="logo">
