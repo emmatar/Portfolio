@@ -3,22 +3,16 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
-import ThemeProvider from "react-bootstrap/ThemeProvider";
 
 function App() {
   return (
-    <ThemeProvider
-      breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
-      minBreakpoint="xxs"
-    >
-      <Container fluid className="p-0">
+      <Container fluid className="p-0" id="page-container">
         <Header />
-        <main>
+        <main id="content-wrap">
           <Outlet />
         </main>
-        <Footer />
+        <Footer id="content-wrap"/>
       </Container>
-    </ThemeProvider>
   );
 }
 

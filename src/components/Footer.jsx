@@ -1,33 +1,37 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-
 function Footer() {
   return (
-      <Container id="footer">
-        <Row className="d-flex justify-content-center flex-wrap">
-          <Col className="d-flex justify-content-center align-items-center p-0">
-            <a className="contact-info mail" href="mailto:m.matar515@gmail.com">
-            </a>
-          </Col>
-          <Col className="d-flex justify-content-center align-items-center p-0">
-            <a
-              className="contact-info github"
-              href="https://github.com/emmatar"
-              target="_blank"
-            >
-            </a>
-          </Col>
-          <Col className="d-flex justify-content-center align-items-center p-0">
-            <a
-              className="contact-info linkedin"
-              href="https://www.linkedin.com/in/elijah-m-818597b1/"
-              target="_blank"
-            >
-            </a>
-          </Col>
-        </Row>
-      </Container>
+    <footer
+      id="footer"
+      className="d-flex flex-wrap justify-content-between align-items-center border-top"
+    >
+      <div className="copyright col-md-4 d-flex align-items-center">
+        <span className="mx-2 text-muted">
+          © 2024 Elijah M. All Rights Reserved
+        </span>
+      </div>
+      <ul className="app-links nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li className="ms-3">
+          <a
+            className="text-muted contact-info github"
+            href="https://github.com/emmatar"
+            target="_blank"
+          ></a>
+        </li>
+        <li className="ms-3">
+          <a
+            className="text-muted contact-info mail"
+            href="mailto:m.matar515@gmail.com"
+          ></a>
+        </li>
+        <li className="ms-3">
+          <a
+            className="text-muted contact-info linkedin"
+            href="https://www.linkedin.com/in/elijahmatar/"
+            target="_blank"
+          ></a>
+        </li>
+      </ul>
+    </footer>
   );
 }
 
