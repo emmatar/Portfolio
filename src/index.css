@@ -46,9 +46,9 @@ li {
 
 #footer {
   background-color: var(--blue);
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  /* position: fixed; */
+  /* left: 0; */
+  /* bottom: 0; */
   width: 100%;
 }
 
@@ -290,14 +290,21 @@ a img:hover {
 
 /* -------------------------MEDIA QUERIES-------------------------- */
 
-/* @media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
+  .resume-info {
+    min-width: 300px !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .resume-info {
+    min-width: 260px;
+  }
   .page-section-styles {
-    display: flex;
+    padding: 1.7em;
+    margin: 2.5em;
   }
-  .resume-cont {
-    justify-content: space-around;
-  }
-} */
+}
 
 @media screen and (min-width: 768px) {
   #name {
@@ -326,14 +333,15 @@ a img:hover {
   }
   .resume-cont {
     display: flex;
-    padding: 0px;
+    padding: 1em;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .resume-info {
     background-color: var(--white);
     border-radius: 10px;
     color: var(--blue);
     margin: 15px;
-    padding: 0px;
   }
 }
 
@@ -350,13 +358,14 @@ a img:hover {
     display: flex;
     justify-content: center;
   }
-  /* .page-section-styles {
+  .page-section-styles {
     padding: 1.7em;
-  } */
+  }
   .resume-cont {
-    display: inline-block
+    display: inline-block;
   }
   .resume-info {
+    min-width: 204px;
     background-color: var(--white);
     border-radius: 10px;
     color: var(--blue);
@@ -370,10 +379,10 @@ a img:hover {
     font-size: 35pt;
     margin-right: 5px;
   }
-  /* .page-section-styles {
+  .page-section-styles {
     padding: 1.7em;
     margin: 3em;
-  } */
+  }
   .resume-info {
     background-color: var(--white);
     border-radius: 10px;
