@@ -4,36 +4,32 @@
   --darkblue: rgb(37, 93, 121);
 }
 
+a {
+  display: flex;
+  align-items: center;
+}
+
 /* Element Tags */
 img {
   border: none;
   border-radius: 15px;
   transition: transform 0.1s;
 }
-a img:hover {
-  transform: scale(1.1);
-}
 
 /* Classes */
-.github-icon {
-  min-width: 50px;
-  min-height: 50px;
-}
-
-.single-proj-cont {
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
-.single-proj-text h4 {
+.app-title {
   position: relative;
   left: -0.5em;
   font-size: 33px;
   line-height: 1.5;
   color: var(--white);
 }
-.proj-image {
-  box-shadow: 10px 10px 30px -7px rgba(0, 0, 0, 0.5);
+
+.app-description {
+  margin-top: 1em;
+  font-size: 23px;
+  line-height: 1.5;
+  color: var(--white);
 }
 
 .github-icon {
@@ -42,16 +38,20 @@ a img:hover {
   background-image: url("../../lib/images/github-mark.png");
   background-size: 100% 100%;
   display: inline-block;
+  min-width: 50px;
+  min-height: 50px;
   height: 35px;
   width: 35px;
   bottom: 5px;
 }
 
-.single-proj-text p {
-  margin-top: 1em;
-  font-size: 23px;
-  line-height: 1.5;
-  color: var(--white);
+.proj-image {
+  box-shadow: 10px 10px 30px -7px rgba(0, 0, 0, 0.5);
+}
+
+.single-proj-cont {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .style-line {
@@ -60,3 +60,121 @@ a img:hover {
   background-color: var(--darkblue);
   margin-bottom: 1em;
 }
+a img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+  .single-proj-cont {
+    background-color: var(--white);
+    margin: 1.5em auto;
+    padding: 1em 2em;
+    border-radius: 10px;
+
+  }
+  .single-proj-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .app-title {
+    position: relative;
+    left: 5px;
+    display: flex;
+    align-items: center;
+    color: var(--blue) !important;
+    justify-content: space-between;
+  }
+  .app-description {
+    color: var(--darkblue) !important;
+    margin-top: 0px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .single-proj-cont {
+    background-color: var(--white);
+    margin-top: 0px;
+    padding: 1em 2em;
+    border-radius: 10px;
+  }
+  .single-proj-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  .app-title {
+    position: relative;
+    left: 5px;
+    display: flex;
+    align-items: center;
+    color: var(--blue) !important;
+    justify-content: space-between;
+  }
+  .app-description {
+    color: var(--darkblue) !important;
+    margin-top: 0px !important;
+  }
+}
+
+
+
+/* @media screen and (min-width: 1200px) {
+  .resume-info {
+    min-width: 300px !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .resume-info {
+    min-width: 260px;
+  }
+  .page-section-styles {
+    padding: 1.7em;
+    margin: 2.5em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #name {
+    font-size: 40pt;
+    margin-right: 5px;
+  }
+  .menu-button {
+    display: none;
+  }
+  .menu-content {
+    display: flex;
+    position: relative;
+    background: transparent;
+    margin-left: 1em;
+    top: 0.5em;
+    border-radius: 40px;
+    color: var(--white);
+  }
+  .menu:hover .menu-content {
+    display: flex;
+  }
+  .page-section-styles {
+    width: 700px;
+    padding: 1.7em;
+    margin: 2.5em;
+  }
+  .resume-cont {
+    display: flex;
+    padding: 1em;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .resume-info {
+    background-color: var(--white);
+    border-radius: 10px;
+    color: var(--blue);
+    margin: 15px;
+  }
+}
+
+*/
