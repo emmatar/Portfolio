@@ -9,18 +9,16 @@ function About() {
         <h1>About</h1>
       </Row>
       <Col className="page-section-styles">
-        <Row className="mb-4">
-          <h3 className="mb-2">Hello, and welcome to my page!</h3>
-        </Row>
-        <Row className="mx-2">
+        <Row className="mx-2 about-section">
+          <h3 className="mb-2 about-header">Hi, and Welcome to my page!</h3>
           <p className="mb-5">
-            Full Stack Web Developer, blending front-end and back-end knowledge
-            with a strong background in data-driven decision-making. Proficient
-            in HTML5, CSS3, JavaScript ES6+, React, Express.js, and SQL,
-            focusing on optimizing user interaction and operational efficiency.
-            Committed to leveraging analytical skills and a detail-oriented
-            approach to develop innovative applications that enhance user
-            experience.
+            A Full Stack Web Developer, blending front-end and back-end
+            knowledge with a strong background in data-driven decision-making.
+            Proficient in HTML5, CSS3, JavaScript ES6+, React, Express.js, and
+            SQL, focusing on optimizing user interaction and operational
+            efficiency. Committed to leveraging analytical skills and a
+            detail-oriented approach to develop innovative applications that
+            enhance user experience.
             <br />
             <br />
             <br />

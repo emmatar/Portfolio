@@ -4,10 +4,7 @@
   --darkblue: rgb(37, 93, 121);
 }
 
-a {
-  display: flex;
-  align-items: center;
-}
+
 
 /* Element Tags */
 img {
@@ -17,19 +14,22 @@ img {
 }
 
 /* Classes */
-.app-title {
-  position: relative;
-  left: -0.5em;
-  font-size: 33px;
-  line-height: 1.5;
-  color: var(--white);
+.proj-title {
+  font-size: 25pt;
+  color: var(--blue);
 }
 
-.app-description {
-  margin-top: 1em;
-  font-size: 23px;
-  line-height: 1.5;
-  color: var(--white);
+.proj-description {
+  color: var(--darkblue);
+}
+
+.proj-anchor {
+  margin: 0px;
+  padding: 0px;
+}
+
+.proj-image {
+  width: 100%;
 }
 
 .github-icon {
@@ -38,10 +38,8 @@ img {
   background-image: url("../../lib/images/github-mark.png");
   background-size: 100% 100%;
   display: inline-block;
-  min-width: 50px;
-  min-height: 50px;
-  height: 35px;
-  width: 35px;
+  height: 50px;
+  width: 50px;
   bottom: 5px;
 }
 
@@ -70,24 +68,21 @@ a img:hover {
     margin: 1.5em auto;
     padding: 1em 2em;
     border-radius: 10px;
-
   }
-  .single-proj-text {
+  .proj-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .app-title {
+  .proj-title {
     position: relative;
     left: 5px;
     display: flex;
     align-items: center;
-    color: var(--blue) !important;
     justify-content: space-between;
   }
-  .app-description {
-    color: var(--darkblue) !important;
+  .proj-description {
     margin-top: 0px !important;
   }
 }
@@ -99,82 +94,48 @@ a img:hover {
     padding: 1em 2em;
     border-radius: 10px;
   }
-  .single-proj-text {
+  .proj-cont {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-
-  .app-title {
-    position: relative;
-    left: 5px;
-    display: flex;
-    align-items: center;
-    color: var(--blue) !important;
-    justify-content: space-between;
+  .proj-title {
+    padding: 0px;
   }
-  .app-description {
-    color: var(--darkblue) !important;
+
+  .proj-github {
+    display: flex;
+    justify-content: end;
+    padding: 0px;
+  }
+  .proj-description {
     margin-top: 0px !important;
+    font-size: large;
   }
 }
 
-
-
-/* @media screen and (min-width: 1200px) {
-  .resume-info {
-    min-width: 300px !important;
+@media screen and (max-width: 400px) {
+  .proj-github {
+    width: fit-content;
   }
-}
-
-@media screen and (min-width: 992px) {
-  .resume-info {
-    min-width: 260px;
-  }
-  .page-section-styles {
-    padding: 1.7em;
-    margin: 2.5em;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #name {
-    font-size: 40pt;
-    margin-right: 5px;
-  }
-  .menu-button {
-    display: none;
-  }
-  .menu-content {
+  .proj-title h1 {
     display: flex;
-    position: relative;
-    background: transparent;
-    margin-left: 1em;
-    top: 0.5em;
-    border-radius: 40px;
-    color: var(--white);
+    padding: 0px;
+    font-size: 20pt;
   }
-  .menu:hover .menu-content {
-    display: flex;
+  .proj-description p { 
+    padding: 0px;
+    font-size: 12pt;
+    min-width: 180px;
   }
-  .page-section-styles {
-    width: 700px;
-    padding: 1.7em;
-    margin: 2.5em;
+  .proj-github a {
+    margin: 10px 0px 0px 0px;
   }
-  .resume-cont {
-    display: flex;
-    padding: 1em;
-    padding-left: 0px;
-    padding-right: 0px;
+  .github-icon {
+    width: 40px;
+    height: 40px;
   }
-  .resume-info {
-    background-color: var(--white);
-    border-radius: 10px;
-    color: var(--blue);
-    margin: 15px;
-  }
+
 }
 
-*/
