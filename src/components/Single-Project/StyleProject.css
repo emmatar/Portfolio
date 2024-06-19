@@ -65,7 +65,7 @@ a img:hover {
 @media screen and (min-width: 768px) {
   .single-proj-cont {
     background-color: var(--white);
-    margin: 1.5em auto;
+    margin: 0px;
     padding: 1em 2em;
     border-radius: 10px;
   }
@@ -73,6 +73,12 @@ a img:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .proj-github {
+    display: flex;
+    justify-content: end;
+    padding: 0px;
   }
 
   .proj-title {
