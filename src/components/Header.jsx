@@ -1,7 +1,5 @@
 import NavTabs from "./NavTabs";
-import image from "../lib/images/Profile_pic.jpeg";
-import { Container } from "react-bootstrap";
-
+import image from "../lib/images/IMG_8132.jpg";
 function Header() {
   return (
     <header>
