@@ -14,14 +14,14 @@ function About() {
             <h1>About Me</h1>
           </Row>
           <Row className="about-description">
-            <h3>Name:</h3>
+            {/* <h3>Name:</h3>
             <p>Elijah Matar</p>
             <h3>Name:</h3>
             <p>Elijah Matar</p>
             <h3>Name:</h3>
             <p>Elijah Matar</p>
             <h3>Name:</h3>
-            <p>Elijah Matar</p>
+            <p>Elijah Matar</p> */}
             <p>Updates coming soon!</p>
           </Row>
 
