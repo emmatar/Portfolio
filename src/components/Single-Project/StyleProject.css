@@ -109,19 +109,25 @@ a img:hover {
   .proj-title {
     padding: 0px;
   }
+  .proj-title h1 {}
 
   .proj-github {
     display: flex;
     justify-content: end;
     padding: 0px;
   }
-  .proj-description {
+  .proj-description p {
     margin-top: 0px !important;
-    font-size: large;
+    font-size: 15pt;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 655px) {
+  .proj-title h1 {
+    
+  }
+}
+@media screen and (max-width: 500px) {
   .proj-github {
     width: fit-content;
   }
@@ -139,6 +145,7 @@ a img:hover {
     margin: 10px 0px 0px 0px;
   }
   .github-icon {
+    margin-left: 6px;
     width: 40px;
     height: 40px;
   }

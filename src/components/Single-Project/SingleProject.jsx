@@ -18,10 +18,10 @@ const SingleProject = () => {
         <Row className="single-proj-cont">
           <Col className="proj-content">
             <Row className="proj-header">
-              <Col className="col-8 proj-title">
+              <Col xs={9} sm={10} md={9} lg={9} xl={9} className="proj-title">
                 <h1>Sweater Weather&nbsp;⛈️</h1>
               </Col>
-              <Col className="proj-github">
+              <Col xs={3} sm={2} md={3} lg={3} xl={3} className="col-2 proj-github">
                 <a
                   href="https://github.com/emmatar/Sweater-Weather.git"
                   target="blank"
