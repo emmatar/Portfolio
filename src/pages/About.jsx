@@ -9,9 +9,22 @@ function About() {
         <h1>Welcome to My Page!</h1>
       </Row>
       <Col className="page-section-styles">
-        <Row className="mx-2 about-section">
-          <h1 className="mb-2 about-header">About Me</h1>
-          <p>Updates coming soon!</p>
+        <Row className="mx-0  about-section">
+          <Row className="about-header">
+            <h1>About Me</h1>
+          </Row>
+          <Row className="about-description">
+            <h3>Name:</h3>
+            <p>Elijah Matar</p>
+            <h3>Name:</h3>
+            <p>Elijah Matar</p>
+            <h3>Name:</h3>
+            <p>Elijah Matar</p>
+            <h3>Name:</h3>
+            <p>Elijah Matar</p>
+            <p>Updates coming soon!</p>
+          </Row>
+
           {/* <p>
             Hi, my name is Elijah, and I am a Full Stack Web Developer.
             <br />

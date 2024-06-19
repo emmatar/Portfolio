@@ -132,31 +132,36 @@ a img:hover {
 
 /* Dropdown Button */
 .menu-button {
-  height: 2.5rem;
-  margin: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  left: 2em;
+  top: 1.7em;
+  height: 3em;
   background-color: var(--blue);
-  border-radius: 15px;
+  border-radius: 10px;
   border-color: var(--white);
 }
 
 /* color/dimensions for logo lines */
 .menu-button-logo {
   background-color: var(--white);
-  margin: 5px 5px;
+  margin: 3px 5px;
   width: 1.5rem;
   height: 0.2rem;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .menu-content {
+  margin: 0px;
   display: none;
   position: absolute;
-  top: 6rem;
+  top: 6.3rem;
   padding: 0;
   color: var(--blue);
   background-color: var(--white);
-  border-radius: 0px 30px;
-  width: fit-content;
+  border-radius: 0px 30px 30px 30px;
   box-shadow: 20px 10px 20px -10px rgba(0, 0, 0, 0.2);
   list-style: none;
   z-index: 1;
@@ -172,15 +177,7 @@ a img:hover {
 
 .name-container {
   display: flex;
-  align-self: center;
-}
-
-.name-container img {
-  width: 90px;
-  height: 90px;
-  margin-right: 10px;
-  border: none;
-  border-radius: 150px;
+  align-self: flex-end;
 }
 
 .nav-item {
@@ -193,14 +190,11 @@ a img:hover {
   align-items: center;
 }
 
-.page-title-style {
+.page-title-style h1 {
   width: fit-content;
   display: flex;
   color: var(--blue);
   text-align: center;
-}
-
-.page-title-style h1 {
   margin-top: 0.5em;
   font-size: 40pt;
 }
@@ -285,8 +279,6 @@ a img:hover {
   color: var(--white);
   padding-right: 10px;
   font-size: 40pt;
-  margin: 0px;
-  align-self: flex-end;
 }
 
 /* -------------HOVER--------------------------------- */
@@ -328,7 +320,6 @@ a img:hover {
     margin: 0px;
     padding: 1em 2em;
     border-radius: 10px;
-
   }
   .about-section h1 {
     margin-top: 10px;
@@ -337,6 +328,7 @@ a img:hover {
     font-size: 40px;
     color: var(--blue);
   }
+
   .about-section p {
     color: var(--darkblue);
     font-size: 16pt;
@@ -353,8 +345,7 @@ a img:hover {
   }
 
   #name {
-    font-size: 40pt;
-    margin-right: 5px;
+    font-size: 45pt;
   }
 
   .menu-button {
@@ -372,6 +363,7 @@ a img:hover {
   .menu:hover .menu-content {
     display: flex;
   }
+
   .page-section-styles {
     /* width: 700px; */
     padding: 1.7em;
@@ -397,21 +389,36 @@ a img:hover {
     flex-direction: column;
   }
 
+  #name {
+    font-size: 40pt;
+  }
+
   .copyright {
     order: 1;
   }
 
   .menu-content {
-    width: 140px;
+    width: 130px;
   }
   .menu-content a {
-    font-size: 18pt;
-    padding: 0px 0px 0px 40px;
+    font-size: 15pt;
+    padding: 0px;
   }
   .nav-item {
-    width: 100px;
-    display: flex;
-    justify-content: center;
+    margin: 8px;
+  }
+
+  .nav-link{
+      margin: 0px 0px 0px 15px;
+      text-align: start;
+  }
+
+  .nav-style-line {
+    position: relative;
+    left: 20px;
+    width: 80px;
+    height: 1px;
+    background-color: var(--blue);
   }
   .page-section-styles {
     padding: 1.7em 1.7em 0px 1.7em;
@@ -434,12 +441,20 @@ a img:hover {
     border-radius: 10px;
     color: var(--blue);
   }
+
+  .about-header {
+    padding: 0px;
+  }
+
   .about-section h1 {
     margin-top: 10px;
     padding: 0px;
     text-align: center;
     font-size: 25px;
     color: var(--blue);
+  }
+  .about-section h3 {
+    font-size: 18px;
   }
   .about-section p {
     font-size: 12pt;
@@ -449,17 +464,20 @@ a img:hover {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) {
   #name {
-    font-size: 28pt;
-    margin-right: 5px;
+    font-size: 35pt;
   }
 }
 
 @media screen and (max-width: 400px) {
   #name {
-    margin-left: 2px;
-    font-size: 21pt;
-    margin-right: 5px;
+    font-size: 30pt;
+  }
+  .menu-button {
+    position: relative;
+    left: 1.3em;
+    top: 1.7em;
   }
 }
+

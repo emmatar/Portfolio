@@ -13,8 +13,15 @@ function NavTabs() {
         </button>
         <ul className="menu-content">
           <li className="nav-item">
-            <Link to="/" className={currentPage === "/" ? "nav-link active" : "nav-link"}>About</Link>
+            <Link
+              to="/"
+              className={currentPage === "/" ? "nav-link active" : "nav-link"}
+            >
+              About
+            </Link>
           </li>
+          <div className="nav-style-line"></div>
+
           <li className="nav-item">
             <Link
               to="/Projects"
@@ -25,6 +32,7 @@ function NavTabs() {
               Projects
             </Link>
           </li>
+          <div className="nav-style-line"></div>
           <li className="nav-item">
             <Link
               to="/Resume"

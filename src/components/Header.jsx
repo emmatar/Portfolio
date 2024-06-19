@@ -6,7 +6,6 @@ function Header() {
       <NavTabs />
       <section className="name-container">
         <h1 id="name">Elijah Matar</h1>
-        <img src={image} alt="Profile picture" />
       </section>
     </header>
   );
