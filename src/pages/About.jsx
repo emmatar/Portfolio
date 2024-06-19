@@ -12,14 +12,17 @@ function About() {
         <Row className="mx-2 about-section">
           <h1 className="mb-2 about-header">About Me</h1>
           <p>
-            A Full Stack Web Developer, blending front-end and back-end
-            knowledge with a strong background in data-driven decision-making.
-            Proficient in HTML5, CSS3, JavaScript ES6+, React, Express.js, and
-            SQL, focusing on optimizing user interaction and operational
-            efficiency. Committed to leveraging analytical skills and a
-            detail-oriented approach to develop innovative applications that
-            enhance user experience.
-
+            Hi, my name is Elijah, and I am a Full Stack Web Developer
+            <br />
+            <br />
+            
+             I
+            feel like knowledge with a strong background in data-driven
+            decision-making. Proficient in HTML5, CSS3, JavaScript ES6+, React,
+            Express.js, and SQL, focusing on optimizing user interaction and
+            operational efficiency. Committed to leveraging analytical skills
+            and a detail-oriented approach to develop innovative applications
+            that enhance user experience.
           </p>
           {/* <p className="pt-5">*Due to short timing: UI updates coming soon!*</p> */}
         </Row>
