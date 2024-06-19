@@ -13,17 +13,17 @@ function About() {
           <Row className="about-header">
             <h1>About Me</h1>
           </Row>
-          <Row className="about-description">
-            {/* <h3>Name:</h3>
-            <p>Elijah Matar</p>
+          {/* <Row className="about-description">
             <h3>Name:</h3>
             <p>Elijah Matar</p>
             <h3>Name:</h3>
             <p>Elijah Matar</p>
             <h3>Name:</h3>
-            <p>Elijah Matar</p> */}
+            <p>Elijah Matar</p>
+            <h3>Name:</h3>
+            <p>Elijah Matar</p>
             <p>Updates coming soon!</p>
-          </Row>
+          </Row> */}
 
           {/* <p>
             Hi, my name is Elijah, and I am a Full Stack Web Developer.
