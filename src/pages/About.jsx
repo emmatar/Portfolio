@@ -10,7 +10,7 @@ function About() {
       </Row>
       <Col className="page-section-styles">
         <Row className="mx-2 about-section">
-          <h3 className="mb-2 about-header">Hi, and Welcome to my page!</h3>
+          <h1 className="mb-2 about-header">Hi, and Welcome to my page!</h1>
           <p className="mb-5">
             A Full Stack Web Developer, blending front-end and back-end
             knowledge with a strong background in data-driven decision-making.
