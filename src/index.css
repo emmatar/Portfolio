@@ -106,14 +106,15 @@ a img:hover {
 }
 
 .download-logo {
-  width: 10px;
+  width: 100px;
   position: relative;
   right: 10px;
   cursor: pointer;
   list-style: none;
   font-size: 40px;
   color: #0e5259;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 .download-logo:hover {
@@ -191,8 +192,7 @@ a img:hover {
 }
 
 .page-title-style h1 {
-  width: fit-content;
-  display: flex;
+  /* width: fit-content; */
   color: var(--blue);
   text-align: center;
   margin-top: 0.5em;
@@ -408,9 +408,9 @@ a img:hover {
     margin: 8px;
   }
 
-  .nav-link{
-      margin: 0px 0px 0px 15px;
-      text-align: start;
+  .nav-link {
+    margin: 0px 0px 0px 15px;
+    text-align: start;
   }
 
   .nav-style-line {
@@ -480,4 +480,3 @@ a img:hover {
     top: 1.7em;
   }
 }
-

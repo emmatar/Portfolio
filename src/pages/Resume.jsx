@@ -11,10 +11,10 @@ import { GrDocumentPerformance } from "react-icons/gr";
 function Resume() {
   return (
     <Container lg={12} className="p-2 page-cont">
-      <Row className="page-title-style">
+      <Row className="page-title-style ">
         <h1>Resume</h1>
         <a href={myResume} className="download-logo" download>
-          <BsCloudDownload />
+          <BsCloudDownload  className="icloud-logo"/>
         </a>
       </Row>
       <Row>

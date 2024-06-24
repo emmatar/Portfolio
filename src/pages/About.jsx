@@ -11,35 +11,23 @@ function About() {
       <Col className="page-section-styles">
         <Row className="mx-0  about-section">
           <Row className="about-header">
-            <h1>About Me</h1>
+            <h1>About</h1>
           </Row>
-          {/* <Row className="about-description">
-            <h3>Name:</h3>
-            <p>Elijah Matar</p>
-            <h3>Name:</h3>
-            <p>Elijah Matar</p>
-            <h3>Name:</h3>
-            <p>Elijah Matar</p>
-            <h3>Name:</h3>
-            <p>Elijah Matar</p>
-            <p>Updates coming soon!</p>
-          </Row> */}
-
-          {/* <p>
-            Hi, my name is Elijah, and I am a Full Stack Web Developer.
-            <br />
-            <br />
-            
-            
-            My Background: 
-            nowledge with a strong background in data-driven
-            decision-making. Proficient in HTML5, CSS3, JavaScript ES6+, React,
-            Express.js, and SQL, focusing on optimizing user interaction and
-            operational efficiency. Committed to leveraging analytical skills
-            and a detail-oriented approach to develop innovative applications
-            that enhance user experience.
-          </p> */}
-          {/* <p className="pt-5">*Due to short timing: UI updates coming soon!*</p> */}
+          <Row className="about-description">
+            <p>
+              Hi! <br />
+              I'm Elijah, a certified Full Stack Software Developer with a
+              diverse background and a passion for technology. Over the last
+              four years, I've been navigating the roads as a CDL A professional
+              truck driver. Yup, those massive absurdities that are always slow,
+              in the left lane for absolutely no reason?! This experience has
+              taught me the value of precision, reliability, and problem-solving
+              under pressure. Before hitting the highways, I spent four years in
+              sales management, where I led teams to success, honed my
+              communication skills, and learned the art of customer
+              satisfaction.
+            </p>
+          </Row>
         </Row>
       </Col>
     </Container>
