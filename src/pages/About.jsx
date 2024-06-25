@@ -5,7 +5,7 @@ import profilePic from "../lib/images/profile-pic.jpg";
 
 function About() {
   return (
-    <Container lg={12} className="p-2 page-cont">
+    <Container lg={12} className="p-0 page-cont">
       <Row className="page-title-style">
         <h1>Welcome to My Page!</h1>
       </Row>
@@ -14,6 +14,7 @@ function About() {
           <Row className="about-header">
             <Col className="about-title">
               <h1>About</h1>
+              <div className="about-divider"></div>
             </Col>
             <Col className="profile-pic-cont">
               <img
