@@ -223,7 +223,7 @@ img .profile-pic {
 
 .resume-cont {
   justify-content: center;
-  margin: 0px -48px !important
+  /* margin: 0px -48px !important */
 }
 
 .resume-info {
