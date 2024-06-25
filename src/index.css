@@ -41,7 +41,6 @@ li {
 
 /* ----------------------------Classes------------------------- */
 
-
 .about-title {
   padding: 0px !important;
   display: flex;
@@ -54,7 +53,6 @@ li {
   height: 2px;
   background-color: var(--blue);
 }
-
 
 .profile-pic-cont {
   padding: 0px 30px 0px 0px !important;
@@ -206,8 +204,8 @@ a img:hover {
 }
 
 .page-section-styles {
-  padding: 1em;
-  margin: 1em 1em 2em 1em;
+  padding: 1.1em;
+  margin: 0em 1em 2em 1em;
   border-radius: 10px;
   width: auto;
   height: auto;
@@ -394,10 +392,6 @@ img .profile-pic {
     display: flex;
   }
 
-  .page-section-styles {
-    padding: 20px;
-  }
-  
   .resume-info {
     background-color: var(--white);
     border-radius: 10px;
@@ -479,9 +473,6 @@ img .profile-pic {
     height: 1px;
     background-color: var(--blue);
   }
-  .page-section-styles {
-    padding: 18px;
-  }
 
   .resume-cont {
     display: inline-block;
@@ -554,6 +545,6 @@ img .profile-pic {
     top: 1.7em;
   }
   .page-section-styles {
-    padding: 12px;
+    /* padding: 12px; */
   }
 }
