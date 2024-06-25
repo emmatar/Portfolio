@@ -41,6 +41,7 @@ li {
 
 /* ----------------------------Classes------------------------- */
 
+
 .about-title {
   padding: 0px !important;
   display: flex;
@@ -53,6 +54,7 @@ li {
   height: 2px;
   background-color: var(--blue);
 }
+
 
 .profile-pic-cont {
   padding: 0px 30px 0px 0px !important;
@@ -358,7 +360,7 @@ img .profile-pic {
 
   .about-description p {
     color: var(--darkblue);
-    font-size: 18pt;
+    font-size: 20pt;
     width: 100%;
     margin-top: 20px;
   }

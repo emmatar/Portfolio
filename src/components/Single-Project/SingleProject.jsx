@@ -18,10 +18,64 @@ const SingleProject = () => {
         <Row className="single-proj-cont">
           <Col className="proj-content">
             <Row className="proj-header">
+              <Col className="proj-title">
+                <h1>Daily-Scheduler&nbsp;⏰</h1>
+              </Col>
+              <Col className="proj-github">
+                {" "}
+                <a
+                  href="https://github.com/emmatar/Daily-Scheduler.git"
+                  target="blank"
+                >
+                  <img
+                    className="github-icon"
+                    src={gitHubIcon}
+                    alt="github-icon"
+                  />
+                </a>
+              </Col>
+            </Row>
+            <Row className="proj-description">
+              <p>
+                Welcome to the Daily Scheduler! An application set to help users
+                keep track of their daily events with ....wait for
+                it.....Colors!! The Daily Scheduler affords users to save daily
+                events in specific time blocks, and depending on the user&apos;s
+                current time-of-day, the time blocks will change colors to
+                notify the user if the event has passed, is within the current
+                hour, or is still lingering in the near future!
+              </p>
+            </Row>
+            <Row className="proj-application">
+              <a
+                className="proj-anchor"
+                href="https://emmatar.github.io/Daily-Scheduler/"
+                target="blank"
+              >
+                <img
+                  className="proj-image"
+                  src={dailyScheduler}
+                  alt="daily_scheduling_application"
+                />
+              </a>
+            </Row>
+          </Col>
+        </Row>
+        <div className="style-line"></div>
+        <Row className="single-proj-cont">
+          <Col className="proj-content">
+            <Row className="proj-header">
               <Col xs={9} sm={10} md={9} lg={9} xl={9} className="proj-title">
                 <h1>Sweater Weather&nbsp;⛈️</h1>
               </Col>
-              <Col xs={3} sm={2} md={3} lg={3} xl={3} className="col-2 proj-github">
+              <Col
+                xs={3}
+                sm={2}
+                md={3}
+                lg={3}
+                xl={3}
+                className="col-2 proj-github"
+              >
                 <a
                   href="https://github.com/emmatar/Sweater-Weather.git"
                   target="blank"
@@ -62,6 +116,51 @@ const SingleProject = () => {
         <Row className="single-proj-cont">
           <Col className="proj-content">
             <Row className="proj-header">
+              <Col className="proj-title">
+                <h1>Code Quiz&nbsp;💯</h1>
+              </Col>
+              <Col className="proj-github">
+                <a
+                  href="https://github.com/emmatar/Code-Quiz.git"
+                  target="blank"
+                >
+                  <img
+                    className="github-icon"
+                    src={gitHubIcon}
+                    alt="github-icon"
+                  />
+                </a>
+              </Col>
+            </Row>
+            <Row className="proj-description">
+              <p>
+                Welcome to the Code Quiz! Would you like to test your knowledge
+                on some Javascript Basics? Well, if you are, you&apos;re exactly
+                where you need to be. The Code quiz is a timed quiz that will
+                dock the time to complete the quiz, if you answer incorrectly!
+                <br/>
+                *slow but intense music plays*
+              </p>
+            </Row>
+            <Row className="proj-application">
+              <a
+                className="proj-anchor"
+                href="https://emmatar.github.io/Code-Quiz/"
+                target="blank"
+              >
+                <img
+                  className="proj-image"
+                  src={codeQuiz}
+                  alt="javascript_quiz_application"
+                />
+              </a>
+            </Row>
+          </Col>
+        </Row>
+        <div className="style-line"></div>
+        <Row className="single-proj-cont">
+          <Col className="proj-content">
+            <Row className="proj-header">
               <Col className="col-8 proj-title">
                 <h1>Drum Key&nbsp;🥁</h1>
               </Col>
@@ -91,97 +190,6 @@ const SingleProject = () => {
                   className="proj-image"
                   src={drumKey}
                   alt="drum_keyboard_application"
-                />
-              </a>
-            </Row>
-          </Col>
-        </Row>
-        <div className="style-line"></div>
-        <Row className="single-proj-cont">
-          <Col className="proj-content">
-            <Row className="proj-header">
-              <Col className="proj-title">
-                <h1>Code Quiz&nbsp;💯</h1>
-              </Col>
-              <Col className="proj-github">
-                <a
-                  href="https://github.com/emmatar/Code-Quiz.git"
-                  target="blank"
-                >
-                  <img
-                    className="github-icon"
-                    src={gitHubIcon}
-                    alt="github-icon"
-                  />
-                </a>
-              </Col>
-            </Row>
-            <Row className="proj-description">
-              <p>
-                Welcome to the Code Quiz! Would you like to test your knowledge
-                on some Javascript Basics? Well, if you are, you&apos;re exactly
-                where you need to be. The Code quiz is a timed quiz that will
-                dock the time to complete the quiz, if you answer incorrectly!
-                slow but intense music plays
-              </p>
-            </Row>
-            <Row className="proj-application">
-              <a
-                className="proj-anchor"
-                href="https://emmatar.github.io/Code-Quiz/"
-                target="blank"
-              >
-                <img
-                  className="proj-image"
-                  src={codeQuiz}
-                  alt="javascript_quiz_application"
-                />
-              </a>
-            </Row>
-          </Col>
-        </Row>
-        <div className="style-line"></div>
-        <Row className="single-proj-cont">
-          <Col className="proj-content">
-            <Row className="proj-header">
-              <Col className="proj-title">
-                <h1>Daily-Scheduler&nbsp;⏰</h1>
-              </Col>
-              <Col className="proj-github">
-                {" "}
-                <a
-                  href="https://github.com/emmatar/Daily-Scheduler.git"
-                  target="blank"
-                >
-                  <img
-                    className="github-icon"
-                    src={gitHubIcon}
-                    alt="github-icon"
-                  />
-                </a>
-              </Col>
-            </Row>
-            <Row className="proj-description">
-              <p>
-                Welcome to the Daily Scheduler! An application set to help users
-                keep track of their daily events with ....wait for
-                it.....Colors!! The Daily Scheduler affords users to save daily
-                events in specific time blocks, and depending on the user&apos;s
-                current time-of-day, the time blocks will change colors to
-                notify the user if the event has passed, is within the current
-                hour, or is still lingering in the near future!
-              </p>
-            </Row>
-            <Row className="proj-application">
-              <a
-                className="proj-anchor"
-                href="https://emmatar.github.io/Daily-Scheduler/"
-                target="blank"
-              >
-                <img
-                  className="proj-image"
-                  src={dailyScheduler}
-                  alt="daily_scheduling_application"
                 />
               </a>
             </Row>

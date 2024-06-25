@@ -26,17 +26,16 @@ function About() {
           </Row>
           <Row className="about-description">
             <p>
-              Hi! <br />
-              I'm Elijah, a certified Full Stack Software Developer with a
-              diverse background and a passion for technology. Over the last
-              four years, I've been navigating the roads as a CDL A professional
-              truck driver. Yup, those massive absurdities that are always slow,
-              in the left lane for absolutely no reason?! This experience has
-              taught me the value of precision, reliability, and problem-solving
-              under pressure. Before hitting the highways, I spent four years in
-              sales management, where I led teams to success, honed my
-              communication skills, and learned the art of customer
-              satisfaction.
+              Hi! <br />I am a Full Stack Software Developer with a diverse
+              background and a passion for technology. Certified in MERN stack
+              development with hands-on experience, and known for strong
+              analytical skills, attention to detail, and a proactive approach
+              to learning new technologies. After successfully transitioning
+              from CDL-A Professional Truck Driving and sales management, I went
+              on to cultivate a unique blend of problem-solving skills,
+              technical acumen, and a strong work ethic. I love to contribute
+              fresh perspectives and a dedicated work ethic through all work.
+              So, lets work together!
             </p>
           </Row>
         </Row>
