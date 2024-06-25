@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import profilePic from "../lib/images/profile-pic.jpg";
 
 function About() {
   return (
@@ -11,7 +12,16 @@ function About() {
       <Col className="page-section-styles">
         <Row className="mx-0  about-section">
           <Row className="about-header">
-            <h1>About</h1>
+            <Col className="about-title">
+              <h1>About</h1>
+            </Col>
+            <Col className="profile-pic-cont">
+              <img
+                src={profilePic}
+                alt="profile-image"
+                className="profile-pic"
+              />
+            </Col>
           </Row>
           <Row className="about-description">
             <p>
