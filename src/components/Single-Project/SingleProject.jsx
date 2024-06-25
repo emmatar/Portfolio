@@ -40,7 +40,7 @@ const SingleProject = () => {
                 around the world! Also, based on the given temperature for your
                 search, Sweater Weather indicates <i>"Weather</i> or not, to
                 wear a <i>Sweater</i> or not" by showing a mini sweater logo on
-                todays forecast section. *Btw, pls forgive me
+                todays forecast section.
               </p>
             </Row>
             <Row className="proj-application">
