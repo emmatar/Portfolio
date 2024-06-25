@@ -7,7 +7,7 @@ function About() {
   return (
     <Container lg={12} className="p-0 page-cont">
       <Row className="page-title-style">
-        <h1>Welcome to My Page!</h1>
+        <h1>Welcome</h1>
       </Row>
       <Col className="page-section-styles">
         <Row className="mx-0  about-section">
