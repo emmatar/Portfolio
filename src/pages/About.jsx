@@ -35,7 +35,7 @@ function About() {
               on to cultivate a unique blend of problem-solving skills,
               technical acumen, and a strong work ethic. I love to contribute
               fresh perspectives and a dedicated work ethic through all work.
-              So, lets work together!
+              <br/>Lets work together!
             </p>
           </Row>
         </Row>
